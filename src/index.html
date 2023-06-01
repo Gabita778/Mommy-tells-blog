@@ -6,28 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.scss" />
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+
     <title>Oh mamma mia!</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>h mamma mia!</h1>
-        </div>
-        <div class="nav">
-            <a href="#" target="_blank">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn"><b>Post</b> </button>
-                <div class="dropdown-content">
-                    <a href="#"> <img src="https://picsum.photos/100" alt="">Cameroon</a>
-                    <a href="#"><img src="https://picsum.photos/100" alt="">Hong Kong</a>
-                    <a href="#"><img src="https://picsum.photos/100" alt="">Kenia</a>
-                    <a href="#"><img src="https://picsum.photos/100" alt="">Venezuela</a>
-                </div>
+        <input id="nav-btn" type="checkbox" />
+        <label for="nav-btn" type="checkbox">
+            <span class="icon"></span>
+        </label>
+        <nav>
+
+            <div class="logo">
+                <h1>h mamma mia!</h1>
             </div>
-            <a href="#" target="_blank">Something</a>
-            <a href="#" target="_blank">About the team</a>
-        </div>
+            <div class="nav">
+                <div class="togo"> <img src="./images/logo.png" alt=""><a href="index.html"></a></div>
+                <a class="home" href="#" target="_blank">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn"><b>Post</b></button>
+                    <div class="dropdown-content">
+                        <a href="#"> <img src="https://picsum.photos/100" alt="">Cameroon</a>
+                        <a href="#"><img src="https://picsum.photos/100" alt="">Hong Kong</a>
+                        <a href="#"><img src="https://picsum.photos/100" alt="">Kenia</a>
+                        <a href="#"><img src="https://picsum.photos/100" alt="">Venezuela</a>
+                    </div>
+                </div>
+                <a href="#" target="_blank">Something</a>
+                <a href="#" target="_blank">About the team</a>
+            </div>
+        </nav>
     </header>
 
     <section>
