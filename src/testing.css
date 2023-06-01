@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+.container{
+    /* width: 800px; */
+    display: grid;
+   grid-template-columns: 200px / auto auto auto auto auto auto auto ;
+   grid-template-rows: 200px / auto auto auto auto auto auto auto  ;
+   gap: 1px;
+
+}
+
+.green{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    background-image: url(images/kenya.jpeg);
+  align-content: center;
+
+  
+  }
+
+.darkblue{
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    
+    
+    
+}
+.pink{
+    width: 600px;
+    height: 600px;
+    background-color:pink;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    
+   
+}
+
+.orange{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.red{
+    width: 200px;
+    height: 200px;
+    background-color:red;
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+
+
+
+/* Media query for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  /* Adjust the grid layout to have a single column and 5 rows */
+  .container {
+    grid-template-columns: 100%; /* Make the column width 100% */
+    grid-template-rows: repeat(5, 1fr); /* Use 1fr for equal height rows */
+  }
+
+  /* Make the green element full width and 50% of the viewport height */
+  .green {
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* Make the darkblue element span from the first to the third column, full width, and 50% of the viewport height */
+  .darkblue {
+    grid-column: 1/3; /* Update the grid-column property to span from the first to the third column */
+    grid-row: 2/3;
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* Make the pink element full width and 50% of the viewport height */
+  .pink {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 50vh;
+  }
+
+  /* Make the orange element full width and 50% of the viewport height */
+  .orange {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 100%;
+    height: 50vh;
+  }
+
+  /* Make the red element full width and 50% of the viewport height */
+  .red {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 80%;
+    height: 50vh;
+    margin-left: 50px;
+  }
+} 
