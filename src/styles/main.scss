@@ -6,11 +6,131 @@
 //importing the partial scss file: _variables.scss
 @use "variables";
 
+
 //importing bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
 
-h1 {
-  color: tomato;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --primary: #8d838d;
+}
+
+body {
+  width:90%;
+  margin: auto;
+  padding: 30px;
+}
+
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid;
+}
+
+.nav {
+  text-transform: uppercase;
+  border: 2px solid black;
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  /* border-left: 1px solid red; */
+}
+
+a:hover {
+  color: black
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  transition: 0.4s;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropbtn {
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  /* border-left: 1px solid red; */
+}
+
+.dropbtn:hover {
+  color: black;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(12, 12, 12, 0.26);
+  width: 100vw;
+  height: 20vh;
+  top: 22px;
+  left: -37.5vw;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--primary);
+  border-left: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: none;
+}
+
+
+
+
