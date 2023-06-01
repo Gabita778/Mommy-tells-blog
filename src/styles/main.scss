@@ -11,7 +11,15 @@
 
 // Write your sass code here or import partials
 
-h1 {
-  color: tomato;
+h1{
+  color: variables.$primary;
+}
+
+.container10{
+  border:1px solid variables.$primary;
+  height:10rem;
+  width: 40rem;
+  padding: 10px;
+  margin: 20px;
 }
 
