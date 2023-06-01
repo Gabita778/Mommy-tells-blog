@@ -1,9 +1,10 @@
 // You can overwrite bootstrap default values here.
 // Refer node_modules/bootstrap/scss/_variables for a full list of variables.
 
-$primary:   #EEB495;
+$primary:   hsl(21, 72%, 76%);
 $secondary: #F2E1D3;
-$danger:#FDF7F2;
+$tertiary:#FDF7F2;
+$hover:#ba4a0f;
 
 // $grid-breakpoints: (
 //   xs: 0,
