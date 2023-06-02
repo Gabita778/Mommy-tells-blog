@@ -5,21 +5,115 @@
 
 //importing the partial scss file: _variables.scss
 @use "variables";
-
+@base
+$bg-color:#EEB495;
+$dark-theme: #28a745 ;
+$primary-color: #f8bbd0 ;
+$accent-color: #6a1b9a !default;
+$warning:#ffc107;
+$info:#202d86;
+$box-shadow:
+$font-family: 'MonteCarlo', cursive;
+$font-family: 'Montserrat', sans-serif;
+$font-family: 'Playball', cursive;
+$font-family: 'Playfair', serif;
 //importing bootstrap
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat:ital,wght@0,100;0,400;0,700;0,800;1,100;1,400;1,700;1,800&family=Playball&family=Playfair:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: monospace;
+  font-weight: 900;
+}
 h1{
   color: variables.$primary;
 }
 
-.container10{
-  border:1px solid variables.$primary;
-  height:10rem;
-  width: 40rem;
-  padding: 10px;
-  margin: 20px;
+		ul {
+			padding: 0;
+			list-style: none;
+			background: #f2f2f2;
+			width: 500px;
+		}
+
+		ul li {
+			display: block;
+			position: relative;
+			line-height: 21px;
+			text-align: left;
+		}
+		ul li a {
+			display: block;
+			padding: 8px 25px;
+			color: #333;
+			text-decoration: none;
+		}
+		ul li a:hover {
+			color: #fff;
+			background: #939393;
+		}
+		ul li ul.dropdown {
+			min-width: 100%;
+			/* Set width of the dropdown */
+			background: #f2f2f2;
+			display: none;
+			position: absolute;
+			z-index: 999;
+			left: 0;
+		}
+		ul li:hover ul.dropdown {
+			display: block;
+			/* Display the dropdown */
+		}
+
+// .container10{
+//   border:1px solid variables.$primary;
+//   height:10rem;
+//   width: 40rem;
+//   padding: 10px;
+//   margin: 20px;
+
+// }
+
+#social-media{
+color:#f8f9fa;
+padding: 10px 0;
+background-color: rgb(181, 159, 159);
+// height:30vh;
+// display: flex;
+// justify-content: center;
 }
 
+ul {
+  list-style-type: none;
+}
+li a{
+  font-size: 1.5rem;
+  color: hsl(233, 72%, 49%);
+  padding: 0.5rem;
+  color: rgb(240, 240, 240);
+}
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  line-height: 1rem;
+  color: black;
+  
+}
+#mama:hover{
+transform: rotateY('180');
+}
+
+ .footer--blog{
+  
+  margin:10px;
+  border-top-left-radius: 10%;
+ } 
+ 
