@@ -130,6 +130,17 @@ header input:checked + label span::before {
       .home{
         display: none;
       }
+
+      .handy{
+        margin-left: 3em;
+        
+      }
+
+      .dropbtn{
+      // background-color: aqua;
+      margin-top: 80px;
+      margin-left: -18px;
+      }
     }
   }
   
