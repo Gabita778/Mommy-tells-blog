@@ -6,10 +6,333 @@
 //importing the partial scss file: _variables.scss
 @use "variables";
 
+
 //importing bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Write your sass code here or import partials
+
+
+// this is the body
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #8d838d;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  background-color: variables.$tertiary;
+}
+
+// this is the header
+header {
+  width: 100%;
+  height: calc (30%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid;
+  background-color: variables.$secondary;
+
+  .logo {
+    h1 {
+      font-size: 60px;
+      width: fit-content;
+      margin: auto;
+    }
+
+    h1::before {
+      content: url('../images/logo.png');
+      border: 4px solid;
+      border-radius: 100%;
+      top: -2px;
+
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    span {
+      padding: 1rem;
+      cursor: pointer;
+      display: inline-block;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav{
+    .togo{
+      margin: 1.5em;
+      cursor: pointer;
+    }
+
+    .dropdown-content{
+      a{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+header label span::before {
+  content: "\f0c9";
+}
+
+header nav {
+  display: none;
+}
+
+header input:checked ~ nav {
+  display: block;
+}
+
+header input:checked + label span::before {
+  content: "\f00d";
+}
+
+@media (max-width: 700px) {
+
+  header{
+
+    h1{
+      display: none;
+    }
+
+    .nav{
+      .home{
+        display: none;
+      }
+
+      .togo{
+        margin-top: -1em;
+      }
+
+      .handy{
+        margin-left: 2em;
+        
+      }
+
+      li .dropbtn{
+      // background-color: aqua;
+      margin-top: 5em;
+      margin-left: -2.8em;
+    }
+
+      .dropbtn:hover .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 13em;
+        left: 0;
+        background-color: variables.$primary;
+
+      }
+      
+    }
+  }
+  
+}
+@media (min-width: 700px) {
+ 
+
+  header label span.icon {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header{
+    .nav{
+      .togo{
+        display: none;
+      }
+    
+    }
+  }
+
+  header .nav{
+    justify-content:space-around;
+    height: 10vh;
+  }
+
+}
+
+.nav {
+  background-color: variables.$secondary;
+  text-transform: uppercase;
+  border: 2px solid black;
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  z-index:100;
+}
+
+.nav:hover{
+  background-color: variables.$secondary;
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  /* border-left: 1px solid red; */
+}
+
+a:hover {
+  color: black
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: variables.$hover;
+  transition: 0.4s;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropbtn {
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+//  border-left: 1px solid red; 
+}
+
+.dropbtn:hover {
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:hsla(21, 85%, 71%, 0.475);
+  width: 100%;
+  height: 20vh;
+  top:10em;
+  left: 0;
+  // margin: auto;
+  z-index: 10;
+}
+
+.dropdown-content a:hover {
+  background-color: variables.$tertiary;
+  border-left: none;
+}
+
+ li .dropbtn:hover .dropdown-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: none;
+
+}
+
+
+
+
+// this is section carrusel
+
+.wrapimg {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  padding: 10px;
+  background-color: variables.$primary;
+  border: 1px solid rgb(95, 9, 84);
+  display: grid;
+  place-items: center;
+}
+
+.imgcontainer {
+  width: 80%;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.i1 {
+  position: absolute;
+  z-index: 2;
+  transition: all 4s;
+  transform-origin: 50%, 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.i2 {
+  filter: blur(20px);
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+}
+
+.imgcontainer:hover .i1 {
+  filter: blur(20px);
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+.imgcontainer:hover .i2 {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+// Esther's section
 
 
 
@@ -147,6 +470,7 @@ grid-row: 3/5;
   margin-left: 50px;
   
 }
+  
 .red {
   grid-column: 1/2;
   grid-row: 5/6;
@@ -161,15 +485,193 @@ grid-row: 3/5;
   width: 80%;
   height: 50vh;
   margin-left: 50px;
-
-}
-.bottom{
+  }
+  
+  .bottom{
   grid-column:1/2 ;
   grid-row: 7/8;
   width: 80%;
   height: 50vh;
   margin-left: 50px;
+  }
+
+
+
+// Pikchu's section
+
+.container09 {
+
+  border: 1px solid orange;
+  margin: auto;
+  padding: 10px;
+  height: 50vh;
+  grid-gap: 1px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  div {
+    border: 2px solid;
+    height: 80%;
+    margin: 0 1em;
+    display: grid;
+    place-items: center;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  @media (max-width:700px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 
 }
+
+.container10 {
+  display: grid;
+  border: 1px solid orange;
+  margin: auto;
+  height: 50vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 15px;
+
+  div {
+    border: 1px solid orange;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  @media (max-width:700px) {
+      width: 100%;
+      height: 200vh;
+      display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+}
+}
+
+.pic1{
+  background-image: url(../images/1.jpg);
+  grid-column: 1/2; 
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 1/6;
+  }
+}
+
+.pic2{
+  background-image: url(../images/1.jpg);
+  grid-column: 2/3;
+  grid-row: 1/3;
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 6/11;
+  }
+  
+}
 } 
+
+.pic3{
+  background-image: url(../images/1.jpg);
+  grid-column: 3/4;
+  grid-row:1/6;
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 11/16;
+  }
+}
+
+.pic4{
+  background-image: url(../images/3.jpg);
+  grid-column: 4/5;
+  grid-row:2/6;
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 16/21;
+  }
+}
+
+.pic5{
+  background-image: url(../images/2.jpg);
+  grid-column: 1/2;
+  grid-row:2/6;  
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 21/26;
+  }
+}
+
+.pic6{
+  background-image: url(../images/2.jpg);
+  grid-column: 2/3;
+  grid-row:3/6;
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 26/31;
+  }
+}
+
+.pic7{
+  background-image: url(../images/3.jpg);
+
+  @media (max-width:700px) {
+    grid-column: 1/5;
+    grid-row: 31/36;
+  }
+}
+
+.container11 {
+  border: 1px solid orange;
+  margin: auto;
+  height: 50vh;
+  grid-gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  div {
+    border: 1px solid purple;
+    display: grid;
+    place-items: center;
+  }
+
+  div:nth-child(1){
+    background-color: var(--primary);
+  }
+  div:nth-child(2){
+    background-color: cadetblue;
+  }
+  div:nth-child(3){
+    background-color: palevioletred;
+  }
+  div:nth-child(4){
+    background-color: palegoldenrod;
+  }
+  div:nth-child(5){
+    background-color: plum;
+  }
+  div:nth-child(6){
+    background-color: paleturquoise;
+  }
+
+  @media (max-width:700px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+  }
+}
+
+
+
 
