@@ -339,7 +339,7 @@ a:hover:after {
 .container8{
   /* width: 1000px; */
   display: grid;
- grid-template-columns: 200px / auto auto auto auto auto auto auto auto;
+ grid-template-columns: 200px / 1fr auto auto auto auto auto auto auto;
  grid-template-rows: 200px / auto auto auto auto auto auto auto auto ;
  gap: 1px;
 
