@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background: #25A9FC;
     display:flex;
     align-items: center;
     flex-direction: column-reverse;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   .page{
@@ -17,12 +18,13 @@ body{
   }
   
   .box{
+    // border: 2px solid;
     position: relative;
     margin: auto;
     display: block;
     margin-top: 8%;
-    width: 600px;
-    height: 420px;
+    width: 39vw;
+    height: 38vh;
     background: none;
   
   }
@@ -146,9 +148,9 @@ body{
     }
 
     100%{
-        left:40%;
-        width: 20%;
-        height: 20%; 
+        left:38%;
+        width: 25%;
+        height: 25%; 
     }
 }
     @keyframes tongue{
@@ -170,7 +172,7 @@ body{
     width: 20%;
     height: 20%;
     left: 40%;
-    top: 1%;
+    top: 0;
     z-index: 4;
   }
 
@@ -178,17 +180,17 @@ body{
       position: absolute;
       background:#e70865;
       width: 70%;
-      height: 30%;
+      height: 40%;
       border-radius: 50%;
-      left: 1.9vh;
-      top: 2.1vw;
-      z-index: 4;
+      left: 1.9vw;
+      top:0;
+      z-index: 5;
       opacity: 0;
      
   }
 
-  .mouth:hover .t1 +.t2{
-    animation: tongue 2s ease-in forwards;
+  .mouth:hover .t1 +.t2, .invisible a:hover .t1 + .t2{
+    animation: tongue 2.5s ease-in forwards;
   }
 
   .t2 {
@@ -197,11 +199,11 @@ body{
     position: absolute;
     background:#e70865;
     width: 70%;
-    height: 30%;
+    height: 40%;
     border-radius: 50%;
-    left: 1vh;
-    top: 2.1vw;
-    z-index: 4;
+    left:0.8vw;
+    top: 4vh;
+    z-index: 5;
     opacity: 0;
 
 }
@@ -241,8 +243,35 @@ i{
       width: 400px;
       height: 280px;
       background: none;
-  
     }
+
+    .t1 + .t2{
+      left: 1.5vw;
+      top: 3.5vh;
+    }
+    .arrowsliding{
+
+    .rightleg{
+      top:-2.5vh;
+      left:0;
+    }
+
+    .stickright{
+      top:-2.3vh;
+      left:0;
+    }
+
+    .leftleg{
+      top:-0.8vh;
+      left:-4vw;
+    }
+
+    .stickleft{
+      top:-0.8vh;
+      left:-4vw;
+    }
+
+  }
   }
 
 
@@ -302,7 +331,7 @@ i{
 
 .stickleft{
     position: absolute;
-    width: 3.4vw;
+    width: 3.5vw;
     height: 2px;
     background-color: #27354A;
     top:-1.4em;
@@ -347,6 +376,17 @@ i{
         opacity: 0;
         transform: translateX(-50vw);
     }
+}
+
+.invisible{
+  font-size: 0.5em;
+  width: fit-content;
+  position: fixed;
+  top: 43%;
+  left: 49.5%;
+  z-index: 5;
+  opacity: 0;
+ 
 }
 
 
