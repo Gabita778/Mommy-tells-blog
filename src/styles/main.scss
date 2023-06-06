@@ -35,6 +35,7 @@ body {
 }
 
 // this is the header
+
 header {
   position: fixed;
   width: 100%;
@@ -48,6 +49,7 @@ header {
   background-color: variables.$secondary;
   z-index: 3;
    
+
   .shop{
     width: 120%;
     background-color: rgb(253, 184, 151);
@@ -55,6 +57,10 @@ header {
     margin-bottom: 2em;
     display: grid;
     place-content: center;
+
+    a{
+      text-decoration: none;
+    }
   }
 
   .logo {
