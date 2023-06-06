@@ -36,21 +36,33 @@ body {
 
 // this is the header
 header {
+  position: fixed;
   width: 100%;
-  height: calc (30%);
+  height: 26%;
+  top: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 3em;
   // border: 1px solid;
   background-color: variables.$secondary;
-  
+  z-index: 3;
+   
+  .shop{
+    width: 120%;
+    background-color: rgb(253, 184, 151);
+    margin-top: -2.8em;
+    margin-bottom: 2em;
+    display: grid;
+    place-content: center;
+  }
 
   .logo {
     h1 {
       font-size: 60px;
       width: fit-content;
       margin: auto;
+      margin-top: 1em;
     }
 
     h1::before {
@@ -116,6 +128,10 @@ header input:checked+label span::before {
 @media (max-width: 700px) {
 
   header {
+
+    .shop{
+      display: none;
+    }
 
     h1 {
       display: none;
@@ -264,7 +280,7 @@ a:hover:after {
   background-color: variables.$secondary;
   width: 100%;
   height: 20vh;
-  top: 8.5em;
+  top: 14em;
   left: 0;
   // margin: auto;
   z-index: 10;
@@ -287,8 +303,9 @@ a:hover:after {
 
 .wrapimg {
   width: 100%;
-  height: 500px;
-  margin:0;
+  height: 50%;
+  margin: 0;
+  margin-top: 27vh;
   padding: 10px;
   background-color: variables.$primary;
   // border: 1px solid rgb(95, 9, 84);
