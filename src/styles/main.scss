@@ -13,6 +13,7 @@
 // Write your sass code here or import partials
 
 
+
 // this is the body
 *,
 *:before,
@@ -477,19 +478,19 @@ li .dropbtn:hover .dropdown-content {
 // Pikchu's section
 
 .container09 {
-  border: 1px solid orange;
+  padding: 20px;
   margin: auto;
-  padding: 10px;
   height: 100vh;
   grid-gap: 1px;
   display: grid;
   justify-content: space-between;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   div {
-    border: 2px solid;
-    height: 80%;
+  
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px grey;
     margin: 0 1em;
     display: grid;
     place-items: center;
@@ -505,23 +506,20 @@ li .dropbtn:hover .dropdown-content {
 }
 
 
-
 .container10 {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   margin: auto;
-  border: 1px solid orange;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
   grid-gap: 15px;
 
 
   div {
-    border: 1px solid orange;
     background-position: center;
     background-repeat: no-repeat;
-
+    border-radius: 10%;
+    padding: 10px;
   }
 
   @media (max-width:700px) {
@@ -534,117 +532,182 @@ li .dropbtn:hover .dropdown-content {
 }
 
 .pic1 {
-  background-image: url(../images/1.jpg);
+  background-image: url(../images/babyfoot.jpg);
+  background-size: cover;
+  color: white;
+  font-size: 1.5rem;
   grid-column: 1/2;
+ 
 
   @media (max-width:700px) {
     grid-column: 1/5;
-    grid-row: 1/6;
+    grid-row: 1/2;
   }
+
 }
+
+.pic1 span{
+  opacity: 0;
+  color: white;
+}
+
+.pic1:hover span{
+  opacity: 1;
+  color: white;
+}
+
+.pic1:hover{
+  transform: scale(1.1) rotate(5deg);
+  opacity: .9;
+}
+
+
 
 .pic2 {
-  background-image: url(../images/1.jpg);
+  background-image: url(../images/babydiaper1.jpg);
+  background-size: cover;
   grid-column: 2/3;
-  grid-row: 1/3;
+  color: rgb(128, 123, 123);
+  font-size: 1.2rem;
+  
 
   @media (max-width:700px) {
     grid-column: 1/5;
-    grid-row: 6/11;
+    grid-row: 2/3;
   }
 }
+
+
+.pic2 span{
+  opacity: 0;
+  color: white;
+}
+
+.pic2:hover span{
+  opacity: 1;
+  color: white;
+}
+
+.pic2:hover{
+  transform: scale(1.1) rotate(5deg);
+  opacity: .9;
+}
+
 
 .pic3 {
-  background-image: url(../images/1.jpg);
+  background-image: url(../images/babyinarm.jpg);
+  background-size: cover;
   grid-column: 3/4;
-  grid-row: 1/6;
+  grid-row: 1/2;
+  color: white;
+  font-size: 1.5rem;
 
   @media (max-width:700px) {
     grid-column: 1/5;
-    grid-row: 11/16;
+    grid-row: 3/4;
   }
 }
+
+
+.pic3 span{
+  opacity: 0;
+  color: white;
+}
+
+.pic3:hover span{
+  opacity: 1;
+  color: white;
+}
+
+.pic3:hover{
+  transform: scale(1.1) rotate(5deg);
+  opacity: .9;
+}
+
 
 .pic4 {
-  background-image: url(../images/3.jpg);
+  background-image: url(../images/whalemom.jpg);
+  background-size: cover;
   grid-column: 4/5;
-  grid-row: 2/6;
+  color: white;
+  font-size: 1.5rem;
 
   @media (max-width:700px) {
     grid-column: 1/5;
-    grid-row: 16/21;
+    grid-row: 4/5;
   }
 }
 
-.pic5 {
-  background-image: url(../images/2.jpg);
-  grid-column: 1/2;
-  grid-row: 2/6;
-
-  @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 21/26;
-  }
+.pic4 span{
+  opacity: 0;
+  color: white;
 }
 
-.pic6 {
-  background-image: url(../images/2.jpg);
-  grid-column: 2/3;
-  grid-row: 3/6;
-
-  @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 26/31;
-  }
+.pic4:hover span{
+  opacity: 1;
+  color: white;
 }
 
-.pic7 {
-  background-image: url(../images/3.jpg);
-
-  @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 31/36;
-  }
+.pic4:hover{
+  transform: scale(1.1) rotate(5deg);
+  opacity: .9;
 }
+
 
 .container11 {
-  border: 1px solid orange;
   margin: auto;
-  height: 50vh;
+  height: 80vh;
   grid-gap: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  padding-top: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
 
-  div {
-    border: 1px solid purple;
+  div{
+
     display: grid;
     place-items: center;
+ 
   }
+
+  button{
+      background-color: transparent;
+      border: none;
+      text-decoration: underline;
+      letter-spacing: 0.2rem;
+    }
+
+    .Artical-2{
+
+      display: grid;
+      place-items: center;
+
+    }
+
+  
 
   div:nth-child(1) {
     background-color: var(--primary);
+    background-image: url(../images/callingmom.jpeg);
+    background-size: cover;
   }
 
-  div:nth-child(2) {
-    background-color: cadetblue;
-  }
 
-  div:nth-child(3) {
-    background-color: palevioletred;
-  }
-
-  div:nth-child(4) {
-    background-color: palegoldenrod;
+  div:nth-child(3) {  
+    background-image: url(../images/10babies.jpg);
+    background-size: cover;
   }
 
   div:nth-child(5) {
-    background-color: plum;
+   
+    background-image: url(../images/10babies.jpg);
+    background-size: cover;
   }
 
   div:nth-child(6) {
-    background-color: paleturquoise;
+    background-color: rgb(247, 244, 217);
   }
+
 
   @media (max-width:700px) {
     display: grid;
