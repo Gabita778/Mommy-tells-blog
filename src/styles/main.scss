@@ -79,7 +79,8 @@ header {
   }
 
   input {
-    display: none;
+    display: block;
+
   }
 
   label {
@@ -123,6 +124,7 @@ header nav {
 
 header input:checked~nav {
   display: block;
+
 }
 
 header input:checked+label span::before {
@@ -132,6 +134,21 @@ header input:checked+label span::before {
 @media (max-width: 700px) {
 
   header {
+    height: 15%;
+    
+   input{
+    position: absolute;
+ top: 3em;
+ right: 23em;
+
+   }
+
+   .icon{
+    // border: 2px solid;
+    position: absolute;
+    top: 3em;
+    right: 15em;
+   }
 
     height: 10%;
 
@@ -144,6 +161,11 @@ header input:checked+label span::before {
     }
 
     .nav {
+      border: 2px solid blue;
+      position: absolute;
+      width: 67%;
+      top: 8em;
+      left: 0;
       .home {
         display: none;
       }
