@@ -265,8 +265,8 @@ header input:checked+label span::before {
 }
 
 
-a:hover {
-  color: rgb(107, 104, 104
+.ga:hover {
+  color: rgb(107, 104, 104);
 }
 
 .ga:after {
@@ -1207,20 +1207,20 @@ button {
   background: none;
 }
 
-// button::after {
-//   position: absolute;
-//   content: "";
-//   width: 0;
-//   left: 0;
-//   bottom: -5px;
-//   background: #eb1add;
-//   height: 2px;
-//   transition: 0.3s ease-out;
-// }
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  background: #eb1add;
+  height: 2px;
+  transition: 0.3s ease-out;
+}
 
-// button:hover::after {
-//   width:100%;
-// }
+button:hover::after {
+  width:100%;
+}
 
 button:hover svg {
   transform: translateX(6px);
