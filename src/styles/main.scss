@@ -54,7 +54,7 @@ header {
     display: grid;
     place-content: center;
 
-    a{
+    .ga{
       text-decoration: none;
     }
   }
@@ -79,7 +79,7 @@ header {
   }
 
   input {
-    display: block;
+    display: none;
 
   }
 
@@ -106,7 +106,7 @@ header {
     }
 
     .dropdown-content {
-      a {
+      .ga {
         display: flex;
         flex-direction: column;
       }
@@ -160,8 +160,12 @@ header input:checked+label span::before {
       display: none;
     }
 
+    nav{
+      border: 2px solid purple;
+    }
+
     .nav {
-      border: 2px solid blue;
+      // border: 2px solid blue;
       position: absolute;
       width: 67%;
       top: 8em;
@@ -183,6 +187,8 @@ header input:checked+label span::before {
         // background-color: aqua;
         margin-top: 5em;
         margin-left: -2.8em;
+        font-size: 1em;
+       
       }
 
       .dropbtn:hover .dropdown-content {
@@ -247,7 +253,7 @@ header input:checked+label span::before {
   background-color: variables.$secondary;
 }
 
-.nav a {
+.nav .ga {
   text-align: center;
   position: relative;
   text-decoration: none;
@@ -258,11 +264,12 @@ header input:checked+label span::before {
   /* border-left: 1px solid red; */
 }
 
+
 a:hover {
-  color: rgb(107, 104, 104)
+  color: rgb(107, 104, 104
 }
 
-a:after {
+.ga:after {
   content: "";
   position: absolute;
   background-color: black;
@@ -273,11 +280,11 @@ a:after {
   bottom: 0;
 }
 
-a:hover:after {
+.ga:hover:after {
   width: 100%;
 }
 
-.dropdown-content a {
+.dropdown-content .ga {
   color: black;
   padding: 0;
   text-decoration: none;
@@ -314,7 +321,7 @@ a:hover:after {
   z-index: 10;
 }
 
-.dropdown-content a:hover {
+.dropdown-content .ga:hover {
   background-color: variables.$tertiary;
   border-left: none;
 }
