@@ -359,21 +359,8 @@ a:hover:after {
 
 // Esther's section
 
-<<<<<<< HEAD
-.secondsection{
-  color: rgb(99, 86, 86);
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
-
-.container8 {
-  border: 2px solid gray;
-=======
 .container8 {
   // border: 2px solid blue;
->>>>>>> c5e3b26ba5b50b24ca83338877d96aa48a5fddf5
   width: 100%;
   height: 100vh;
   display: grid;
@@ -385,13 +372,8 @@ a:hover:after {
 .green {
   grid-column: 1;
   grid-row: 1;
-<<<<<<< HEAD
-  background-image: url(../images/hongkong.avif);
-  background-size: cover;
-=======
   background-image: url("../images/1.jpg");
  background-size: cover;
->>>>>>> c5e3b26ba5b50b24ca83338877d96aa48a5fddf5
   align-content: center;
   color: antiquewhite;
 }
