@@ -1,15 +1,23 @@
 // You can overwrite bootstrap default values here.
 // Refer node_modules/bootstrap/scss/_variables for a full list of variables.
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat:wght@400;800&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
 
 $primary:   hsl(21, 72%, 76%);
-$secondary: #F2E1D3;
+$secondary: hsl(27, 100%, 89%);
 $tertiary:#FDF7F2;
 $hover:#ba4a0f;
-$sectionfont:rgb(128, 123, 123);
+
+$sectionfont:rgb(172, 164, 164);
+$sectiondarkfontcolor: #2b2a2b;
+$footerbackground: linear-gradient(145deg, #c39595, #F2E1D3);
+
+$buttoncolor:rgb(223, 74, 183);
+$buttontextcolor:white;
+
+
+
+
 
 
 // $grid-breakpoints: (
@@ -21,14 +29,12 @@ $sectionfont:rgb(128, 123, 123);
 //   xxl: 1400px,
 // );
 
-$spacer: 1rem;
-
-
 
 
 //font
 $fontweight:800;
 $footerfont:'Montserrat', sans-serif;
 $headerfont:'Playball' , sans-serif;
+
 
 

@@ -54,7 +54,7 @@ header {
     display: grid;
     place-content: center;
 
-    a{
+    .ga{
       text-decoration: none;
     }
   }
@@ -79,7 +79,7 @@ header {
   }
 
   input {
-    display: block;
+    display: none;
 
   }
 
@@ -102,11 +102,29 @@ header {
   .nav {
     .togo {
       margin: 1.5em;
-      cursor: pointer;
+      cursor: pointer
+    }
+
+    .best{
+      font-size: 0.8em;
+      // border: 2px solid;
+      font-family: variables.$footerfont;
+      
+    }
+
+    .best:hover{
+      color:rgb(107, 104, 104);
+    }
+
+    .ga{
+      font-family: variables.$footerfont;
     }
 
     .dropdown-content {
-      a {
+      
+      .ga {
+      
+        font-family: variables.$footerfont;
         display: flex;
         flex-direction: column;
       }
@@ -160,8 +178,12 @@ header input:checked+label span::before {
       display: none;
     }
 
+    nav{
+      border: 2px solid purple;
+    }
+
     .nav {
-      border: 2px solid blue;
+      // border: 2px solid blue;
       position: absolute;
       width: 67%;
       top: 8em;
@@ -183,6 +205,8 @@ header input:checked+label span::before {
         // background-color: aqua;
         margin-top: 5em;
         margin-left: -2.8em;
+        font-size: 1em;
+       
       }
 
       .dropbtn:hover .dropdown-content {
@@ -247,7 +271,7 @@ header input:checked+label span::before {
   background-color: variables.$secondary;
 }
 
-.nav a {
+.nav .ga {
   text-align: center;
   position: relative;
   text-decoration: none;
@@ -258,11 +282,12 @@ header input:checked+label span::before {
   /* border-left: 1px solid red; */
 }
 
-a:hover {
-  color: rgb(107, 104, 104)
+
+.ga:hover {
+  color: rgb(107, 104, 104);
 }
 
-a:after {
+.ga:after {
   content: "";
   position: absolute;
   background-color: black;
@@ -273,11 +298,11 @@ a:after {
   bottom: 0;
 }
 
-a:hover:after {
+.ga:hover:after {
   width: 100%;
 }
 
-.dropdown-content a {
+.dropdown-content .ga {
   color: black;
   padding: 0;
   text-decoration: none;
@@ -314,7 +339,7 @@ a:hover:after {
   z-index: 10;
 }
 
-.dropdown-content a:hover {
+.dropdown-content .ga:hover {
   background-color: variables.$tertiary;
   border-left: none;
 }
@@ -399,7 +424,6 @@ a:hover:after {
 
 .container8 {
   // border: 2px solid blue;
-
   width: 100%;
   height: 100vh;
   display: grid;
@@ -407,11 +431,6 @@ a:hover:after {
   grid-template-rows:auto;
   background-color:hsla(21, 85%, 75%, 0.475) ;
     
-  .read{
-    text-decoration: none;
-  }
-}
-
 .green {
   grid-column: 1;
   grid-row: 1;
@@ -429,18 +448,25 @@ a:hover:after {
   padding: 2em;
   background-color: hsla(21, 75%, 81%, 0.475);
   border-radius: 20%;
-  // width: 80%;
+}
+
+.darkblue {
+  background-color: darkblue;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  background-image: url("../images/venezuela.avif");
+  background-size: cover;
+  align-content: center;
 }
 
 .p2{
+
   grid-column:3/4 ;
   grid-row:1/2 ;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsla(21, 75%, 81%, 0.475);
-  border-radius: 20%;
-  
  }
 
 .darkblue {
@@ -466,9 +492,9 @@ a:hover:after {
     display: flex;
     justify-content: center;
     align-items: center; 
+   }
   }
-}
-
+  
 .orange {
   background-color: orange;
   grid-column: 1/2;
@@ -510,7 +536,7 @@ a:hover:after {
 .top {
   background-color: pink;
   // // background-image: url("../images/trendy.webp");
-  background-size: cover;
+  // background-size: cover;
   grid-column: 5/6;
   grid-row: 1/3;
   padding: 3em;
@@ -536,7 +562,7 @@ a:hover:after {
   background-image: url("../images/aside-bottom.avif");
   background-size: cover;
   grid-column: 5/6;
-  grid-row: 3/5;
+  grid-row: 3/4;
   border: 2px solid gray;
   border-radius: 5%;
 
@@ -644,6 +670,10 @@ a:hover:after {
 
 // Pikchu's section
 
+audio{
+  background-color: transparent;
+}
+
 .container09-title{
 
   h1{
@@ -652,6 +682,9 @@ a:hover:after {
     display: grid;
     place-items: center;
     font-family: 'Montserrat', sans-serif;
+    justify-content:flex-end;
+    align-items: end;
+    
   }
 
   @media (max-width:700px) {
@@ -659,43 +692,83 @@ a:hover:after {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    margin-top: 50vh;
 
   }
 
 }
 
 .container09 {
-  border: 5px solid black;
   margin: auto;
   height: 60vh;
-  grid-gap: 1px;
+  grid-gap: 10px;
   display: grid;
   justify-content: space-between;
   align-items: center;
-
+  overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
- 
-
-  grid-template-columns: 1fr 1fr;
   grid-row: auto;
+ 
+  
 
 
   div {
     box-sizing: border-box;
     width: 100%;
+    height: 50vh;
     box-shadow: 1px 1px 5px grey;
     margin: 0 1em;
     display: grid;
     place-items: center;
-    text-shadow: 1px 1px 5px black;
+    color: white;
+    text-shadow: 1px 1px 5px rgb(128, 125, 125);
     font-family: variables.$headerfont;
   }
 
+  .audio1{
+    background-image: url(../images/babycrying.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:700px) {
+      display: grid;
+      grid-column:1/4;
+      grid-row: auto;
+    
+    }
+  }
+
+  .audio2{
+    background-image: url(../images/babyishungry.jpg);
+    background-size: cover;
+
+    @media (max-width:700px) {
+      display: grid;
+      grid-column:1/4;
+      grid-row: auto;
+    
+    }
+  }
+
+  .audio3{
+    background-image: url(../images/Newborn-boy-crying.jpg);
+    background-size: cover;
+
+    @media (max-width:700px) {
+      display: grid;
+      grid-column:1/4;
+      grid-row: auto;
+    
+    }
+
+
+  }
 
   @media (max-width:700px) {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-column:1/4;
+    grid-row: auto;
+  
   }
 }
 
@@ -703,27 +776,28 @@ a:hover:after {
 .container10-title{
 
   h1{
-
     border: 1px solid black;
     height: 20vh;
     display: grid;
-    place-items: center;
+    justify-content: flex-end;
+    align-items: end;
     font-family: variables.$footerfont;
 
   }
 
-  // @media (max-width:700px) {
-  //   display: grid;
-  //   grid-template-columns: auto;
-  //   grid-template-rows: auto;
+  @media (max-width:700px) {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin-top: 100vh;
 
-  // }
+  }
 
 }
 
 .container10 {
   height: 50vh;
-  width: 100%;
+  width: 98%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -760,6 +834,7 @@ a:hover:after {
   @media (max-width:700px) {
     grid-column: 1/5;
     grid-row: 1/2;
+
   }
 
 }
@@ -781,11 +856,11 @@ a:hover:after {
 
 .pic1:hover span{
   opacity: 1;
-  color: white;
+  color: variables.$sectionfont;
 }
 
 .pic1:hover{
-  transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1);
   opacity: .9;
 }
 
@@ -827,7 +902,7 @@ a:hover:after {
 }
 
 .pic2:hover{
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1);
   opacity: .9;
 }
 
@@ -852,23 +927,23 @@ a:hover:after {
 
   line-height: 0;
   font-weight: 800;
-  color: #2b2a2b;
+  color: variables.$sectiondarkfontcolor;
 
 }
 
 
 .pic3 span{
   opacity: 0;
-  color: white;
+  color: variables.$sectiondarkfontcolor;
 }
 
 .pic3:hover span{
   opacity: 1;
-  color: white;
+  color: variables.$sectiondarkfontcolor;
 }
 
 .pic3:hover{
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1);
   opacity: .9;
 }
 
@@ -890,7 +965,15 @@ a:hover:after {
 
 .pic4-q{
   line-height: 0;
-  color: #4B4B4B;
+  color: variables.$sectionfont;
+}
+
+.pic4-ans{
+
+}
+
+.hightlight-ans{
+  color: variables.$buttoncolor;
 }
 
 .pic4 span{
@@ -900,11 +983,11 @@ a:hover:after {
 
 .pic4:hover span{
   opacity: 1;
-  color: white;
+  color:white
 }
 
 .pic4:hover{
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1);
   opacity: .9;
 }
 
@@ -916,7 +999,8 @@ a:hover:after {
     border: 1px solid black;
     height: 20vh;
    display: grid;
-   place-items: center;
+   justify-content: flex-end;
+   align-items: end;
    font-family: variables.$footerfont;
   }
 
@@ -941,8 +1025,9 @@ a:hover:after {
 
   button{
       background-color: transparent;
+      color: variables.$buttoncolor;
       border: none;
-      text-decoration: underline;
+      text-decoration:none;
       letter-spacing: 0.2rem;
     }
 
@@ -955,7 +1040,7 @@ a:hover:after {
 
    
     @media (max-width:700px) {
-     
+     height: 50vh;
       
     }
 
@@ -966,22 +1051,27 @@ a:hover:after {
     
     background-image: url(../images/10babies.jpg);
     background-size: cover;
-  }
-
-  div:nth-child(4) {
-    background-color: rgb(247, 244, 217);
 
     @media (max-width:700px) {
-      display: block;
-    }
-
+      height: 50vh;
+       
+     }
   }
+
+  // div:nth-child(4) {
+  //   background-color: variables.$tertiary;
+
+  //   @media (max-width:700px) {
+  //     display: block;
+  //   }
+
+  // }
 
 
   div:nth-child(5) {
    
    
-    background-image: url(../images/10babies.jpg);
+    background-image: url(../images/balancing-work-and-new-baby.jpg);
     background-size: cover;
   }
 
@@ -990,19 +1080,20 @@ a:hover:after {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-
+  
   }
 }
 
 // here begins the footer Agatha + Gabriella debugging
 
 footer {
+ 
   width: 100%;
   height: 50vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 100px;
-  background: linear-gradient(145deg, #c39595, #F2E1D3);
+  background: variables.$footerbackground; //I changed this to variables
 }
 
 h3 {
@@ -1100,7 +1191,7 @@ footer a:hover {
 
 .container-icon {
   // border: 2px solid;
-  grid-column: 2;
+  grid-column: 4;
   grid-row: 2;
   width: 100%;
   display: flex;
@@ -1108,6 +1199,13 @@ footer a:hover {
   justify-content: center;
   text-align: center;
   padding: 3em;
+}
+
+.totop{
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icon {
@@ -1127,7 +1225,7 @@ footer a:hover {
   width: 20%;
 }
 
-.footer-section2 .p-blog {
+.footer-section2 .p-log {
   width: 50%;
 
 }
@@ -1169,20 +1267,20 @@ button {
   background: none;
 }
 
-// button::after {
-//   position: absolute;
-//   content: "";
-//   width: 0;
-//   left: 0;
-//   bottom: -5px;
-//   background: #eb1add;
-//   height: 2px;
-//   transition: 0.3s ease-out;
-// }
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  background: #eb1add;
+  height: 2px;
+  transition: 0.3s ease-out;
+}
 
-// button:hover::after {
-//   width:100%;
-// }
+button:hover::after {
+  width:100%;
+}
 
 button:hover svg {
   transform: translateX(6px);
@@ -1229,8 +1327,8 @@ button svg {
   width: 100%;
   height: 54px;
   font-size: 14px;
-  color: white;
-  background: rgb(223, 74, 183);
+  color: variables.$buttontextcolor;
+  background: variables.$buttoncolor;
   border-radius: 5px;
   border: none;
   font-weight: 500;
@@ -1240,6 +1338,7 @@ button svg {
 
 @media screen and (max-width: 760px) {
   footer {
+    margin-top: 100vh; //pikchu added this margin top because the contend is overlap
     display: block;
     flex-wrap: wrap;
   }
