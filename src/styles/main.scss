@@ -102,11 +102,29 @@ header {
   .nav {
     .togo {
       margin: 1.5em;
-      cursor: pointer;
+      cursor: pointer
+    }
+
+    .best{
+      font-size: 0.8em;
+      // border: 2px solid;
+      font-family: variables.$footerfont;
+      
+    }
+
+    .best:hover{
+      color:rgb(107, 104, 104);
+    }
+
+    .ga{
+      font-family: variables.$footerfont;
     }
 
     .dropdown-content {
+      
       .ga {
+      
+        font-family: variables.$footerfont;
         display: flex;
         flex-direction: column;
       }
@@ -1138,7 +1156,7 @@ footer a:hover {
 
 .container-icon {
   // border: 2px solid;
-  grid-column: 2;
+  grid-column: 4;
   grid-row: 2;
   width: 100%;
   display: flex;
@@ -1146,6 +1164,13 @@ footer a:hover {
   justify-content: center;
   text-align: center;
   padding: 3em;
+}
+
+.totop{
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icon {
@@ -1165,7 +1190,7 @@ footer a:hover {
   width: 20%;
 }
 
-.footer-section2 .p-blog {
+.footer-section2 .p-log {
   width: 50%;
 
 }
