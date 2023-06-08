@@ -565,6 +565,7 @@ header input:checked+label span::before {
   border: 2px solid gray;
   border-radius: 5%;
 
+
   .asidebottom{
     font-size: 40px;
    }
@@ -663,133 +664,118 @@ header input:checked+label span::before {
   padding-top: 10px;
   display: flex;
   justify-content: flex-start;
-}
+  font-size: 30px;
+  color: black;
+  }
+
 
 
 
 // Pikchu's section
 
-audio{
-  background-color: transparent;
-}
-
-.container09-title{
-
-  h1{
-    border: 1px solid black;
-    height: 20vh;
-    display: grid;
-    place-items: center;
-    font-family: 'Montserrat', sans-serif;
-    justify-content:flex-end;
-    align-items: end;
-    
-  }
-
-  @media (max-width:700px) {
-    // margin-top: 215vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    margin-top: 50vh;
-
-  }
-
-}
-
 .container09 {
-  margin: auto;
-  height: 60vh;
-  grid-gap: 10px;
+  border: 5px solid black;
+  width: 100%;
+  height: 50vh;
+  padding: 1em;
   display: grid;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row: auto;
- 
+  grid-template-rows: 100px 1fr;
+  gap: 2em;
+
   div {
-    box-sizing: border-box;
-    width: 100%;
-    height: 50vh;
+    color:white;
     box-shadow: 1px 1px 5px grey;
     margin: 0 1em;
-    display: grid;
-    place-items: center;
-    color: white;
-    text-shadow: 1px 1px 5px rgb(128, 125, 125);
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+    align-items: center;
+    text-shadow: 1px 1px 5px black;
     font-family: variables.$headerfont;
   }
 
-  .audio1{
-    background-image: url(../images/babycrying.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (max-width:700px) {
-      display: grid;
-      grid-column:1/4;
-      grid-row: auto;
-    
-    }
-  }
-
-  .audio2{
-    background-image: url(../images/babyishungry.jpg);
-    background-size: cover;
-
-    @media (max-width:700px) {
-      display: grid;
-      grid-column:1/4;
-      grid-row: auto;
-    
-    }
-  }
-
-  .audio3{
-    background-image: url(../images/Newborn-boy-crying.jpg);
-    background-size: cover;
-
-    @media (max-width:700px) {
-      display: grid;
-      grid-column:1/4;
-      grid-row: auto;
-    
-    }
-
-
-  }
-
-  @media (max-width:700px) {
-    display: grid;
-    grid-column:1/4;
-    grid-row: auto;
-  
-  }
-}
-
-
-.container10-title{
-
-  h1{
-    border: 1px solid black;
-    height: 20vh;
-    display: grid;
+  .container09-title {
+    grid-column: 1/4;
+    grid-row: 1;
+    display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
-    align-items: end;
-    font-family: variables.$footerfont;
 
+    h1 {
+      // border: 1px solid black;
+      font-family: 'Montserrat', sans-serif;
+      margin-right: 5em;
+    }
   }
 
+  .tired {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(../images/babycrying.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hungry {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: url(../images/babyishungry.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .love {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background: url(../images/Newborn-boy-crying.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
   @media (max-width:700px) {
+    margin-top: 225vh;
+    height: 200vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    margin-top: 100vh;
 
+    h1 {
+      padding: 0.5em;
+    }
+
+    .container09-title {
+      height: 30vh;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .tired {
+      height: 30vh;
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .hungry {
+      height: 30vh;
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .love {
+      height: 30vh;
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+
+    audio {
+      margin-left: 1em;
+    }
   }
-
 }
+
 
 .container10 {
   height: 50vh;
@@ -797,45 +783,72 @@ audio{
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 1fr;
   grid-gap: 15px;
 
 
   div {
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10%;
+    border-radius: 10px;
     padding: 10px;
+  }
+
+  .container10-title{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-radius: none;
+    padding: 3em;
+    box-shadow: 1px 1px 5px grey;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 1px 1px 5px black;
+    font-family: variables.$headerfont;
+
+    h1{
+      // border: 1px solid black;
+      height: 20vh;
+      display: grid;
+      place-items: center;
+      font-family: variables.$footerfont;
+    }
+  
   }
 
 
   @media (max-width:700px) {
     width: 100%;
-    height: 200vh;
+    height: 250vh;
+    margin-top: 50vh;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto;
     grid-template-rows: auto;
+
+    .container10-title{
+      height: 10vh;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
   }
 }
 
 
 .pic1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
   background-image: url(../images/babyfoot.jpg);
   background-size: cover;
   opacity: 0.8;
   color: white;
   font-size: 3rem;
-  grid-column: 1/2;
   font-weight: 800;
 
   @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 1/2;
-
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
-
-}
-
-.pic1{
 
   .pic1-q{
     color: rgb(71, 71, 71);
@@ -843,11 +856,10 @@ audio{
     font-weight: 600;
   }
 
-}
-
-.pic1 span{
-  opacity: 0;
-  color: white;
+  span{
+    opacity: 0;
+    color: white;
+  }
 }
 
 .pic1:hover span{
@@ -861,30 +873,26 @@ audio{
 }
 
 .pic2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
   background-image: url(../images/babydiaper1.jpg);
   opacity: 0.8;
   background-size: cover;
-  grid-column: 2/3;
-  grid-row: 1/2 ;
   color: variables.$sectionfont;
   font-size: 2rem;
   font-weight: 800;
 
-  
-
-  @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 2/3;
+  @media (max-width:700px){
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 }
-
 
 .pic2-q{
   color: rgb(71, 71, 71);
   line-height: 0;
   font-weight: 600; 
 }
-
 
 .pic2 span{
   opacity: 0;
@@ -902,28 +910,26 @@ audio{
 }
 
 .pic3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
   background-image: url(../images/babyinarm.jpg);
   background-size: cover;
   opacity: 0.8;
-  grid-column: 3/4;
-  grid-row: 1/2;
   color: white;
   font-size: 2.5rem;
   font-weight: 800;
 
   @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 3/4;
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
-
 
 .pic3-q{
   line-height: 0;
   font-weight: 800;
   color: variables.$sectiondarkfontcolor;
 }
-
 
 .pic3 span{
   opacity: 0;
@@ -941,32 +947,24 @@ audio{
 }
 
 .pic4 {
+  grid-column: 4/5;
+  grid-row: 2/3;
   background-image: url(../images/whalemom.jpg);
   background-size: cover;
   opacity: 0.8;
-  grid-column: 4/5;
-  grid-row: 1/2;
   color: white;
   font-size: 2.5rem;
   font-weight: 600;
 
   @media (max-width:700px) {
-    grid-column: 1/5;
-    grid-row: 4/5;
+    grid-column: 1/2;
+    grid-row: 5/6;
   }
 }
 
 .pic4-q{
-  line-height: 0;
+  width: 100%;
   color: variables.$sectionfont;
-}
-
-// .pic4-ans{
-
-// }
-
-.hightlight-ans{
-  color: variables.$buttoncolor;
 }
 
 .pic4 span{
@@ -984,38 +982,32 @@ audio{
   opacity: .9;
 }
 
-
-
-.container11-title{
-
-  h1{
-    border: 1px solid black;
-    height: 20vh;
-   display: grid;
-   justify-content: flex-end;
-   align-items: end;
-   font-family: variables.$footerfont;
-  }
-
-}
-
 .container11 {
   margin: auto;
-  height: 80vh;
-  grid-gap: 5px;
+  width: 100%;
+  height: 150vh;
   display: grid;
   padding-top: 10px;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-gap: 2em;
 
-
-  div{
-
-    display: grid;
-    place-items: center;
- 
+  div {
+    padding: 3em;
+    box-shadow: 1px 1px 5px grey;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 1px 1px 5px black;
+    font-family: variables.$headerfont;
   }
 
+  .container11-title {
+    padding: 3em;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
   button{
       background-color: transparent;
       color: variables.$buttoncolor;
@@ -1024,56 +1016,62 @@ audio{
       letter-spacing: 0.2rem;
     }
 
-  
+    h1 {
+      border: transparent;
+      height: fit-content;
+    }
+  }
 
-  div:nth-child(1) {
-    background-color: var(--primary);
+  div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
     background-image: url(../images/callingmom.jpeg);
     background-size: cover;
 
-   
-    @media (max-width:700px) {
-     height: 50vh;
-      
+    .p-artical-1 {
+      grid-column: 2/3;
+      grid-row: 2/3;
     }
-
   }
 
-
-  div:nth-child(3) {  
-    
+  div:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/4;
     background-image: url(../images/10babies.jpg);
     background-size: cover;
 
-    @media (max-width:700px) {
-      height: 50vh;
-       
-     }
+    .p-artical-2 {
+      background-color: rgb(247, 244, 217);
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
   }
 
-  // div:nth-child(4) {
-  //   background-color: variables.$tertiary;
-
-  //   @media (max-width:700px) {
-  //     display: block;
-  //   }
-
-  // }
-
-
-  div:nth-child(5) {
-   
-   
+  div:nth-child(6) {
+    grid-column: 1/2;
+    grid-row: 4/5;
     background-image: url(../images/balancing-work-and-new-baby.jpg);
-    background-size: cover;
+     background-size: cover;
   }
-
 
   @media (max-width:700px) {
+    background-color: #c39595;
+    width: 100%;
+    height: 250vh;
+    margin-top: 50vh;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: auto;
-  
+
+    .container11-title {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      height: 25vh;
+    }
+
+    .artical-2 {
+      display: none;
+    }
   }
 }
 
@@ -1334,6 +1332,18 @@ button svg {
     display: block;
     flex-wrap: wrap;
   }
+
+  .totop{
+    position: absolute;
+    left:11em;
+    top: 1450vh;
+    margin-bottom: 4em; 
+  }
+
+    .container-icon {
+      position: absolute;
+      left: -2em;
+    }
 }
 }
 }
