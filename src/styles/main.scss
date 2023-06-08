@@ -780,6 +780,12 @@ header input:checked+label span::before {
       grid-row: 4/5;
     }
 
+    .cry{
+      width: 90%;
+      padding: 1em;
+      border: 4px solid greenyellow;
+    }
+
 
     audio {
       margin-left: 1em;
