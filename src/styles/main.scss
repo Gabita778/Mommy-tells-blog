@@ -687,7 +687,7 @@ audio{
   }
 
   @media (max-width:700px) {
-    margin-top: 215vh;
+    // margin-top: 215vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -708,9 +708,6 @@ audio{
   grid-template-columns: 1fr 1fr 1fr;
   grid-row: auto;
  
-  
-
-
   div {
     box-sizing: border-box;
     width: 100%;
@@ -885,8 +882,7 @@ audio{
 .pic2-q{
   color: rgb(71, 71, 71);
   line-height: 0;
-  font-weight: 600;
-  
+  font-weight: 600; 
 }
 
 
@@ -923,11 +919,9 @@ audio{
 
 
 .pic3-q{
-
   line-height: 0;
   font-weight: 800;
   color: variables.$sectiondarkfontcolor;
-
 }
 
 
@@ -1092,8 +1086,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 100px;
-  background: variables.$footerbackground; //I changed this to variables
-}
+  background: variables.$footerbackground; 
 
 h3 {
   text-transform: uppercase;
@@ -1341,6 +1334,7 @@ button svg {
     display: block;
     flex-wrap: wrap;
   }
+}
 }
 }
 
