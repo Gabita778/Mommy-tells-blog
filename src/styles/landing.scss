@@ -1,0 +1,67 @@
+
+
+body{
+    background: url(../images/Working-Mother-landing-page.jpg) no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 8%;
+    font-size: xx-small;
+
+    .nav {
+        // border: 2px solid;
+        height: 10%;
+
+        .togo{
+            display: block;
+        }
+    }
+
+
+
+}
+
+div{
+    position: absolute;
+    top: 10em;
+    left: 15em;
+    width: 40%;
+    
+    h1{
+        font-size: 4em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .struggle{
+        font-size: 1.5em;
+        margin-top: -1em;
+        color: antiquewhite;
+    }
+
+    p{
+        font-size: 2em;
+
+    }
+}
+
+.section-form{
+    width: fit-content;
+    position: absolute;
+    bottom: 13em;
+    left: 10em;
+    border: transparent;
+
+    #cars{
+        height: 3.5em;
+        margin-bottom: 1em;
+        padding: 1em;
+        border-radius: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.9em;
+        color: gray;
+        border: transparent;
+        background-color: white;
+
+    }
+}

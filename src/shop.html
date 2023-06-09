@@ -1,173 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Shop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
-    <link src="stylesheet" href="./styles/shop.css"/>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles/shop.scss" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat:wght@400;800&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
-    
-    
-    header p{
-        width: 100%;
-        background-color: #c7b9b9;
-        color: whitesmoke;
-        padding:10px;
-        text-align: center;
-        font-weight: 600;
-    }
 
-   header .promo-1
-   {
-    position: absolute;
-    top:0;
-    left: 0;
-    transition: all 2s;
-    
-   }
-
-   header .promo-2
-   {
-    position: absolute;
-    top:0;
-    left: 0;
-    transition: all 2s;
-   }
-
-   .promo-1:hover{
-
-    transform: translateX(-200px);
-    opacity: 0;
-   
-   }
-
-   .promo-2:hover{
-
-transform: translateX(-200px);
-opacity: 0;
-
-}
-
-
-    
-    h1{
-        background: linear-gradient(145deg, #c39595, #F2E1D3);
-        padding: 1em;
-        font-family: "Playball";
-        font-weight: 500;
-        font-size: 4rem;
-        text-align: center;
-      
-    }
-    
-    h1::before {
-          content: url('../src/images/logo.png');
-          border: 4px solid;
-          border-radius: 100%;
-          top: -2px;
-    
-        }
-      
-        .nav{
-            background-color:#F2E1D3;
-            box-shadow: -1px 1px 2px grey;
-        }
-    
-    
-        .nav-link{
-            color: black;
-           
-            padding-left: 50px;
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: 0.5px;
-        }
-    
-        
-    
-    .card{
-        
-        margin: 30px;
-        border: none;
-        transition: all
-        
-    }
-
-    .card:hover{
-
-        transform: translateY(-10px);
-
-    }
-
-    .nav{
-        margin: -30px 0 30px 0;
-       
-    }
-
-    .fa-solid .fa-cart-shopping{
-        
-    }
-    
-    img{
-        box-shadow: 1px 1px 5px rgb(110, 110, 110);
-        
-    }
-    
-    button:hover{
-        box-shadow: inset 2px 2px 5px rgb(131, 129, 129),
-                    inset -1px -1px 5px rgb(236, 234, 234)
-        ;
-        color:rgb(247, 96, 121);
-    }
-    
-    button{
-        border: none;
-        width: 80%;
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: transparent;
-        font-size: 1em;
-        font-weight: 600;
-        margin-left: 30px;
-        display: flex;
-        color: rgb(75, 74, 74);
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-       background-color:#f7f6f6;
-        box-shadow: 5px 5px 5px #d1cfcf,
-                 -5px -5px 8px #ffffff;
-    }
-    
-    footer p{
-
-
-        background: linear-gradient(145deg, #F2E1D3, #c39595);
-        padding: 5em;
-        color: black;
-        font-weight: 600;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    footer a{
-        text-decoration: none;
-        color: black;
-    }
-    
-    
-    
-    </style>
 
 <body>
 
@@ -196,9 +42,41 @@ opacity: 0;
       </ul>
         
     </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
 
-    <main>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+  </header>
+
+  <main>
+    
        
 
 <section>
@@ -301,7 +179,7 @@ opacity: 0;
 </section>
 
 <section>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
           <div class="card">
             <img src="../src/images/t-shirt.jpeg" class="card-img-top" alt="...">
@@ -346,7 +224,8 @@ opacity: 0;
           </div>
         </div>
       </div>
-</section>
+    </section>
+  </main>
 
 
 <section>
@@ -409,11 +288,9 @@ opacity: 0;
 
    </footer>
 
-
-    
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
 </body>
 </html>
