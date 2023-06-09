@@ -180,7 +180,7 @@ header input:checked+label span::before {
         nav {
             // border: 2px solid purple;
             width: 100%;
-            height: 50vh;
+            height: 30vh;
         }
 
         .nav {
@@ -191,7 +191,7 @@ header input:checked+label span::before {
             position: absolute;
             width: 100%;
             height: 32vh;
-            top: 8em;
+            top: 4.2em;
             left: 0;
             padding: 2em;
 
@@ -214,12 +214,44 @@ header input:checked+label span::before {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
-                height: 80vh;
-                top: 23vh;
-                left: 0;
+                width: 40%;
+                height: 10vh;
+                top: 22vh;
+                left: 7.9em;
                 background-color: variables.$primary;
+                font-size: 0.8em;
+                border-radius: 0.5em;
 
+            }
+
+            .dropdown-content{
+                a{
+                   
+                    img{
+                        display:none;
+                    }
+                }
+
+                .ga:hover:after{
+                    background-color:rgb(129, 120, 120);
+                    width: 100%;
+                }
+
+                .ga:hover{
+                    width: 100%;
+
+                }
+            }
+
+
+            .caret {
+                position: absolute;
+                width: 0.5em;
+                height: 0.5em;
+                border: 2.5vw solid;
+                border-radius: 0.2em;
+                border-color: black transparent transparent transparent; 
+                top:9.5em; 
             }
 
         }
@@ -324,7 +356,7 @@ header input:checked+label span::before {
 }
 
 .dropbtn:hover {
-    color: black;
+    color: rgb(139, 60, 60);
 }
 
 .dropdown-content {
@@ -341,7 +373,7 @@ header input:checked+label span::before {
 }
 
 .dropdown-content .ga:hover {
-    background-color: variables.$tertiary;
+    background-color: #56AEFF;
     border-left: none;
 }
 
@@ -1102,7 +1134,7 @@ header input:checked+label span::before {
 
 footer {
     width: 100%;
-    height: 38vh;
+    height: 40vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1/2fr;
