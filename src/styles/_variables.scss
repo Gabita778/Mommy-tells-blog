@@ -3,17 +3,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat:wght@400;800&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
 
-$primary:   hsl(21, 72%, 76%);
+$primary: hsl(21, 72%, 76%);
 $secondary: hsl(27, 100%, 89%);
-$tertiary:#FDF7F2;
-$hover:#ba4a0f;
+$tertiary: #FDF7F2;
+$hover: #a39e9c;
 
-$sectionfont:rgb(172, 164, 164);
+$sectionfont: rgb(172, 164, 164);
 $sectiondarkfontcolor: #2b2a2b;
-$footerbackground: linear-gradient(145deg, #c39595, #F2E1D3);
+$header-background: linear-gradient(145deg, #c39595, hsl(27, 54%, 89%));
+$footerbackground: linear-gradient(145deg, #F2E1D3, #c39595);
+$promotion-color: #c7b9b9;
 
-$buttoncolor:rgb(223, 74, 183);
-$buttontextcolor:white;
+$buttoncolor: rgb(223, 74, 183);
+$buttontextcolor: white;
 
 
 
@@ -32,9 +34,8 @@ $buttontextcolor:white;
 
 
 //font
-$fontweight:800;
-$footerfont:'Montserrat', sans-serif;
-$headerfont:'Playball' , sans-serif;
-
-
+$fontweight: 800;
+$footerfont: 'Montserrat', sans-serif;
+$headerfont: 'Playball', sans-serif;
+$body-font:'Playfair, sans-serif';
 
