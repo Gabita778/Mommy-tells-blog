@@ -26,8 +26,7 @@
 body {
     width: 99vw;
     margin: 0;
-    background-color: variables.$tertiary;
-
+    font-family: variables.$body-font;
 }
 
 // this is the header
@@ -42,14 +41,15 @@ header {
     flex-direction: column;
     padding: 3em;
     // border: 1px solid;
-    background-color: variables.$secondary;
     z-index: 3;
+    background:variables.$header-background;
+    font-family: variables.$footerfont;
 
 
     .shop {
         width: 120%;
-        background-color: rgb(253, 184, 151);
-        margin-top: -2.8em;
+        background-color:variables.$promotion-color;
+        margin-top: -3em;
         margin-bottom: 2em;
         display: grid;
         place-content: center;
@@ -74,6 +74,7 @@ header {
             border: 4px solid;
             border-radius: 100%;
             top: -2px;
+            z-index: 5;
 
         }
     }
@@ -100,6 +101,8 @@ header {
     }
 
     .nav {
+        background-color: transparent;
+        
         .togo {
             margin: 1.5em;
             cursor: pointer
@@ -131,6 +134,7 @@ header {
         }
     }
 }
+
 
 header label span::before {
     content: "\f0c9";
@@ -178,20 +182,22 @@ header input:checked+label span::before {
         }
 
         nav {
+
             // border: 2px solid purple;
             width: 100%;
-            height: 50vh;
+            height: 30vh;
         }
 
         .nav {
             // border: 2px solid blue;
+            background: variables.$header-background;
             display: flex;
             flex-direction: column;
             justify-content: left;
             position: absolute;
             width: 100%;
             height: 32vh;
-            top: 8em;
+            top: 4.2em;
             left: 0;
             padding: 2em;
 
@@ -214,12 +220,44 @@ header input:checked+label span::before {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                width: 100%;
-                height: 80vh;
-                top: 23vh;
-                left: 0;
-                background-color: variables.$primary;
+                width: 40%;
+                height: 10vh;
+                top: 22vh;
+                left: 7.9em;
+                background-color: linear-gradient(145deg,  #F2E1D3, #c39595);
+                font-size: 0.8em;
+                border-radius: 0.5em;
 
+            }
+
+            .dropdown-content{
+                a{
+                   
+                    img{
+                        display:none;
+                    }
+                }
+
+                .ga:hover:after{
+                    background-color:rgb(129, 120, 120);
+                    width: 100%;
+                }
+
+                .ga:hover{
+                    width: 100%;
+
+                }
+            }
+
+
+            .caret {
+                position: absolute;
+                width: 0.5em;
+                height: 0.5em;
+                border: 2.5vw solid;
+                border-radius: 0.2em;
+                border-color: black transparent transparent transparent; 
+                top:9.5em; 
             }
 
         }
@@ -255,7 +293,7 @@ header input:checked+label span::before {
 }
 
 .nav {
-    background-color: variables.$secondary;
+    // background-color:transparent;
     text-transform: uppercase;
     // border: 2px solid black;
     width: 80vw;
@@ -269,7 +307,7 @@ header input:checked+label span::before {
 }
 
 .nav:hover {
-    background-color: variables.$secondary;
+    background-color:transparent;
 }
 
 .nav .ga {
@@ -324,28 +362,30 @@ header input:checked+label span::before {
 }
 
 .dropbtn:hover {
-    color: black;
+    color: variables.$hover;
 }
 
 .dropdown-content {
     // border: 2px solid;
     display: none;
     position: absolute;
-    background-color: variables.$secondary;
+    background:variables.$header-background;
+    font-size: 0.8em;
     width: 100%;
     height: 20vh;
-    top: 14em;
+    top: 17em;
     left: 0;
     // margin: auto;
     z-index: 10;
 }
 
 .dropdown-content .ga:hover {
-    background-color: variables.$tertiary;
+    background-color:transparent;
     border-left: none;
 }
 
 .dropbtn:hover .dropdown-content {
+    background-color: variables.$header-background;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -361,7 +401,7 @@ header input:checked+label span::before {
     margin: 0;
     margin-top: 27vh;
     padding: 10px;
-    background-color: variables.$primary;
+    background: variables.$header-background;
     // border: 1px solid rgb(95, 9, 84);
     display: grid;
     place-items: center;
@@ -1114,11 +1154,12 @@ header input:checked+label span::before {
 
 footer {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 100px;
-    background: linear-gradient(145deg, #c39595, #F2E1D3);
+    grid-template-rows: 1fr 1/2fr;
+    background: variables.$footerbackground;
+    font-family: variables.$footerfont;
 }
 
 h3 {
@@ -1155,7 +1196,7 @@ footer a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
     padding: 3em;
     font-family: variables.$footerfont;
@@ -1168,7 +1209,7 @@ footer a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
     padding: 3em;
 }
@@ -1180,7 +1221,7 @@ footer a:hover {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
     padding: 3em;
 }
@@ -1223,7 +1264,8 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 3em;
+    padding: 1em;
+    margin-left: -1em;
 }
 
 .totop {
@@ -1231,6 +1273,7 @@ footer a:hover {
     grid-row: 2;
     display: flex;
     justify-content: flex-end;
+    align-items: end;
 }
 
 .icon {
@@ -1256,7 +1299,7 @@ footer a:hover {
 }
 
 span {
-    color: rgb(245, 17, 55);
+    color:#eb1add;
 }
 
 section.three ul {
@@ -1282,12 +1325,13 @@ li {
 button {
     position: relative;
     display: flex;
-    font-weight: 600;
+    width: fit-content;
+    font-weight: 500;
     font-size: 20px;
     gap: 0.5rem;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin: -1em 5em;
     border: none;
     background: none;
 }
@@ -1342,10 +1386,11 @@ button svg {
 
 }
 
+
 .button_submit:hover,
 .feed-form input:hover {
     transform: scale(1.009);
-    box-shadow: 0px 0px 3px 0px #1f5c9a;
+    box-shadow: 0px 0px 3px 0px #eb1add;
 }
 
 .button_submit {
@@ -1359,6 +1404,7 @@ button svg {
     font-weight: 500;
     text-transform: uppercase;
     padding: 1.8em;
+    margin: 0;
 }
 
 @media screen and (max-width: 760px) {
