@@ -1,58 +1,69 @@
+@use "variables";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat:wght@400;800&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
 
 
-body{
+body {
     background: url(../images/Working-Mother-landing-page.jpg) no-repeat;
     background-size: cover;
+    font-family: variables.$body-font;
+    display: grid;
+    width: 90vw;
+    height: 100vh;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 60px repeat(2 1fr);
+    grid-template-areas: "a a a"
+                         "b b ."
+                         "c c .";
 }
 
 header {
+    grid-area: a;
     height: 8%;
-    font-size: xx-small;
+    font-size: small;
+
+    nav {
+        position: absolute;
+        top: -0.1em;
+    }
 
     .nav {
-        // border: 2px solid;
-        height: 10%;
 
-        .togo{
+        .togo {
             display: block;
         }
     }
-
-
-
 }
 
-div{
-    position: absolute;
-    top: 10em;
-    left: 15em;
-    width: 40%;
-    
-    h1{
+div {
+    grid-area: b;
+    width: 50%;
+    padding: 10em;
+
+    h1 {
         font-size: 4em;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: variables.$headerfont;
     }
 
-    .struggle{
+    .struggle {
         font-size: 1.5em;
         margin-top: -1em;
         color: antiquewhite;
     }
 
-    p{
+    p {
         font-size: 2em;
 
     }
 }
 
-.section-form{
+.section-form {
+    grid-area: c;
     width: fit-content;
-    position: absolute;
-    bottom: 13em;
-    left: 10em;
     border: transparent;
+    padding-left: 15em;
+    padding-bottom: 15em;
 
-    #cars{
+    #cars {
         height: 3.5em;
         margin-bottom: 1em;
         padding: 1em;
@@ -64,4 +75,76 @@ div{
         background-color: white;
 
     }
+}
+
+@media (max-width: 750px) {
+
+    body {
+        width: 100vw;
+        height: 150vh;
+        background: url(../images/Working-Mother-landing-page.jpg) no-repeat;
+        background-size: cover;
+        font-family: variables.$body-font;
+        grid-template-columns: auto;
+        grid-template-rows: 0.25fr 1.25fr 1fr;
+        grid-template-areas: "a"
+            "b"
+            "c";
+    }
+
+    header {
+        width: 100vw;
+        height: 10vh;
+        grid-area: a;
+
+        .nav {
+            width: 100%;
+            height: 25vh;
+            // border: 2px solid;
+            top: 5.8em;
+
+        }
+    }
+
+    div {
+        padding: 1em;
+        // border: 2px solid salmon;
+        width: 100%;
+        height: 60vh;
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -5em;
+       
+
+        h1 {
+            font-size:2em;
+            height: 5vh;
+            margin-top: -3em;
+            margin-left: 3em;
+        }
+
+        .struggle{
+            display: none;
+        }
+
+        p {
+            height: 15vh;
+            margin: 0;
+            text-align: justify;
+        }
+    }
+
+
+    .section-form {
+        // border: 2px solid white;
+        width:100%;
+        height: 80vh;
+        grid-area: c;
+        padding: 0;
+
+    }
+
+
 }
