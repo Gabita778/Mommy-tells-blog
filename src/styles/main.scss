@@ -190,7 +190,7 @@ header input:checked+label span::before {
 
         .nav {
             // border: 2px solid blue;
-            background: variables.$header-background;
+            background:linear-gradient(125deg,  hsl(0, 28%, 70%),hsl(27, 54%, 94%)) ;
             display: flex;
             flex-direction: column;
             justify-content: left;
@@ -224,7 +224,7 @@ header input:checked+label span::before {
                 height: 10vh;
                 top: 22vh;
                 left: 7.9em;
-                background-color: linear-gradient(145deg,  #F2E1D3, #c39595);
+                background:linear-gradient(125deg,  hsl(0, 28%, 70%), hsl(27, 54%, 90%)) ;
                 font-size: 0.8em;
                 border-radius: 0.5em;
 
@@ -254,10 +254,10 @@ header input:checked+label span::before {
                 position: absolute;
                 width: 0.5em;
                 height: 0.5em;
-                border: 2.5vw solid;
+                border: 1.8vw solid;
                 border-radius: 0.2em;
                 border-color: black transparent transparent transparent; 
-                top:9.5em; 
+                top:9.6em; 
             }
 
         }
@@ -369,7 +369,7 @@ header input:checked+label span::before {
     // border: 2px solid;
     display: none;
     position: absolute;
-    background:variables.$header-background;
+    background:linear-gradient(125deg,  hsl(0, 28%, 70%), hsl(27, 54%, 90%)) ;
     font-size: 0.8em;
     width: 100%;
     height: 20vh;
@@ -382,6 +382,7 @@ header input:checked+label span::before {
 .dropdown-content .ga:hover {
     background-color:transparent;
     border-left: none;
+    color:variables.$hover;
 }
 
 .dropbtn:hover .dropdown-content {

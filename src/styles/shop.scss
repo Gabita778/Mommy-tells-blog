@@ -15,6 +15,7 @@
         padding:10px;
         text-align: center;
         font-weight: 600;
+
     }
 
    header .promo-1
@@ -83,7 +84,9 @@
             letter-spacing: 0.5px;
         }
     
-    
+        .navbar {
+            display: none;
+        }
     .card{
         
         margin: 30px;
@@ -151,5 +154,11 @@
         color: black;
     }
     
+    @media (max-width:700px) {
+        .nav{
+            display: none;
+        }
+        
+    }
     
     
