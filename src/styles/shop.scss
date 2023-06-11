@@ -8,7 +8,7 @@ header p {
     text-align: center;
     font-weight: 600;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1;
 
 }
@@ -51,7 +51,6 @@ h1 {
     font-weight: 500;
     font-size: 4rem;
     text-align: center;
-
 }
 
 h1::before {
@@ -60,43 +59,37 @@ h1::before {
     border-radius: 100%;
     top: -2px;
 
-<<<<<<< HEAD
 }
-=======
-    
-    img{
-        box-shadow: 1px 1px 5px rgb(110, 110, 110);
-        
-    }
-    
-    button:hover{
-        box-shadow: inset 2px 2px 5px rgb(131, 129, 129),
-                    inset -1px -1px 5px rgb(236, 234, 234)
-        ;
-        color:rgb(247, 96, 121);
-    }
-    
-    button{
-        border: none;
-        width: 80%;
-        margin-bottom: 10px;
-        padding: 10px;
-        background-color: transparent;
-        font-size: 1em;
-        font-weight: 600;
-        margin-left: 30px;
-        display: flex;
-        color: rgb(75, 74, 74);
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-       background-color:#f7f6f6;
-        box-shadow: 5px 5px 5px #d1cfcf,
-                 -5px -5px 8px #ffffff;
-    }
-    
-    footer p{
->>>>>>> 927051e7006acdfce9ea993a9430bbf3fa69ea23
+
+img {
+    box-shadow: 1px 1px 5px rgb(110, 110, 110);
+
+}
+
+button:hover {
+    box-shadow: inset 2px 2px 5px rgb(131, 129, 129),
+        inset -1px -1px 5px rgb(236, 234, 234);
+    color: rgb(247, 96, 121);
+}
+
+button {
+    border: none;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 30px;
+    display: flex;
+    color: rgb(75, 74, 74);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f7f6f6;
+    box-shadow: 5px 5px 5px #d1cfcf,
+        -5px -5px 8px #ffffff;
+}
 
 .nav {
     background-color: #F2E1D3;
@@ -135,8 +128,6 @@ h1::before {
 
 }
 
-
-
 img {
     box-shadow: 1px 1px 5px rgb(110, 110, 110);
 
@@ -168,8 +159,6 @@ button {
 }
 
 footer p {
-
-
     background: linear-gradient(145deg, #F2E1D3, #c39595);
     padding: 5em;
     color: black;
