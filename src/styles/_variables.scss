@@ -6,11 +6,11 @@
 $primary: hsl(21, 72%, 76%);
 $secondary: hsl(27, 100%, 89%);
 $tertiary: #FDF7F2;
-$hover: #a39e9c;
+$hover: hsl(17, 4%, 50%);
 
 $sectionfont: rgb(172, 164, 164);
 $sectiondarkfontcolor: #2b2a2b;
-$header-background: linear-gradient(145deg, #c39595, hsl(27, 54%, 89%));
+$header-background: linear-gradient(145deg, hsl(0, 28%, 67%), hsl(27, 54%, 89%));
 $footerbackground: linear-gradient(145deg, #F2E1D3, #c39595);
 $promotion-color: #c7b9b9;
 
