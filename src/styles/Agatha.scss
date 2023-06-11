@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-size: 1rem;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu;
+background-color: rgb(52, 117, 174);
+
+}.sectionAgatha {
+    position: relative;
+    height: 50vh;
+    background-color: #cb7575;
+    background-image: url('./images/cameroonians-mommies-pics/green-middle-bg-img.png'), url('./images/cameroonians-mommies-pics/green-leaf-bg-img.png');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+  }
+  
+  .hero-mommy-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('./images/cameroonians-mommies-pics/Cameroonqueen.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* For responsiveness */
+  @media only screen and (max-width: 768px) {
+    .sectionAgatha {
+      background-size: cover, cover;
+      background-position: center, center;
+    }
+  }
+  .hero-image h1 {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .line{
+    width: 5x;
+    height: 3px;
+    border-radius: 30%;
+    background-color: black;
+  }
+  /* For responsiveness */
+  @media only screen and (max-width: 768px) {
+    .section {
+      background-size: cover, cover;
+      background-position: center, center;
+    }
+  }
