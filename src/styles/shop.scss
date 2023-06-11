@@ -15,6 +15,7 @@
         padding:10px;
         text-align: center;
         font-weight: 600;
+
     }
 
    header .promo-1
@@ -89,7 +90,9 @@
             z-index: 1;
         }
     
-    
+        .navbar {
+            display: none;
+        }
     .card{
         
         margin: 30px;
@@ -157,5 +160,11 @@
         color: black;
     }
     
+    @media (max-width:700px) {
+        .nav{
+            display: none;
+        }
+        
+    }
     
     
