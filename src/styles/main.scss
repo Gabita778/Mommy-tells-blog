@@ -461,6 +461,7 @@ header input:checked+label span::before {
     padding-top:60px ;
     padding-bottom: 10px;
     box-shadow: 2px 2px 15px grey;
+    color:rgb(172, 164, 164) ;
 
 }
 
@@ -619,6 +620,7 @@ header input:checked+label span::before {
         display: flex;
         justify-content: flex-start;
         padding-top: 10px;
+        font-size: 1.3em;
    
     
     }
@@ -635,8 +637,19 @@ header input:checked+label span::before {
 
     .asidebottom {
         font-size: 40px;
+        padding: 30px;
+        display: flex;
+        justify-content:flex-start;
+        }
+}
 
-    }
+
+.popularposts li {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.3em;
+   
 }
 
 
@@ -733,14 +746,7 @@ header input:checked+label span::before {
     }
 }
 
-.popularposts li {
-    padding-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 20px;
-    font-size: 20px;
-   
-}
+
 
 
 
@@ -757,7 +763,7 @@ header input:checked+label span::before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1fr;
-    gap: 2em;
+    gap: 2.5em;
     margin: auto;
     
 
