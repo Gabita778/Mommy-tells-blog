@@ -398,9 +398,9 @@ header input:checked+label span::before {
 // this is section carrusel
 
 .wrapimg {
-    width: 100%;
-    height: 50%;
-    margin: 0;
+    width: 90%;
+    height: 20%;
+    margin: auto;
     margin-top: 27vh;
     padding: 10px;
     background: variables.$header-background;
@@ -1479,6 +1479,7 @@ button svg {
     footer {
         display: block;
         flex-wrap: wrap;
+        background: variables.$header-background;
     }
 
     .totop {
