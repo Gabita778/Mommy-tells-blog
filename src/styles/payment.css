@@ -40,14 +40,17 @@ form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    width:90vw;
+    
 }
 
 .address{
     grid-column: 1/3;
-    
+   
 }
+
 .address input{
-    width:80vw;
+    width:60vw;
 }
 
 legend{
@@ -62,7 +65,7 @@ legend{
     border: 1px solid rgba(7, 7, 7, 0.616);
     border-top: 1px solid rgba(128, 128, 128, 0.568);
     height: 60vh;
-    width: 80%;
+    width: 85%;
     margin: 5%;
    padding: 10px;
    background:linear-gradient(145deg, hsl(0, 28%, 67%), hsl(27, 54%, 89%));
