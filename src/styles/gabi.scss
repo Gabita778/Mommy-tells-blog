@@ -1,0 +1,432 @@
+@use "variables";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
+
+main {
+    width: 90vw;
+    height: 190vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(2 0.5fr) repeat(3 1fr) repeat(2 0.5fr) 4fr 3fr;
+    grid-template-areas: "head head head head"
+                         "azul . . one"
+                         "azul . . one"
+                         "a a a a"
+                         "a a a a"
+                         "a a a a"
+                         "rosa . . as2"
+                         "rosa . . as2"
+                         "tal tal tal tal"
+                         "tal tal tal tal"
+                         "tal tal tal tal"
+                         "fondo fondo fondo fondo"
+                         "fondo fondo fondo fondo";
+    gap: 3em 0;                     
+}
+
+.vene{
+    box-shadow: 1px 1px 5px hsl(0, 28%, 67%);
+    grid-area: head;
+    display:flex;
+    align-items: center;
+    margin: 2em;
+    padding-left: 2em;
+}
+
+.azul{
+    background-color: #c6e1e3;
+    grid-area: azul;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .star_5 {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        display: block;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid orange;
+        border-left: 100px solid transparent;
+        transform: rotate(35deg);
+        animation: rotation 6s infinite linear;
+      }
+      
+      .star_5:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: -45px;
+        left: -65px;
+        border-bottom: 80px solid orange;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        height: 0;
+        width: 0;
+        transform: rotate(-35deg);
+      }
+      
+      .star_5:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 3px;
+        left: -105px;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid orange;
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+      }
+      
+      .star_5 {
+        position: relative;
+        width: 0px;
+        height: 0px;
+        display: block;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid orange;
+        border-left: 100px solid transparent;
+        transform: rotate(35deg);
+      }
+      
+      .star_5:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: -45px;
+        left: -65px;
+        border-bottom: 80px solid orange;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        height: 0;
+        width: 0;
+        transform: rotate(-35deg);
+      }
+
+      .star_5:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 3px;
+        left: -105px;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-bottom: 70px solid orange;
+        border-left: 100px solid transparent;
+        transform: rotate(-70deg);
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+}
+
+.one{
+    background-color: #2e8d2e;
+    grid-area: one;
+}
+
+.principal {
+    box-shadow: 1px 1px 5px hsl(0, 28%, 67%);
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.3em;
+}
+
+.rosa{
+    background-color: #ec4dc5;
+    grid-area: rosa;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+aside{
+    background-color: #90EF90;
+    grid-area: as2;
+}
+
+.tal{
+    background-color:#e2b8e2 ;
+    grid-area: tal;
+    // display: grid;
+    // width: 100%;
+    // grid-template-columns: repeat(4 1fr);
+    // grid-template-rows: 100%;
+    display: flex;
+    align-items: center;
+
+
+    .a90{
+        // grid-column: 1/2;
+        // grid-row: 1/2;
+        width: 25%;
+        height: 80%;
+        margin: 0 0.5em;
+        background:url(../images/1.jpg);
+        background-position: center;
+        background-size: cover;
+        color: transparent;  
+        font-size: 2em;   
+    }
+
+    .a90:hover{
+        color: white;
+        transform: scale(120%);
+        display: grid;
+        place-items: center;
+       
+    }
+
+    .a91{
+        width: 25%;
+        height: 80%;
+        margin: 0 0.5em;
+        background:url(../images/1.jpg);
+        background-position: center;
+        background-size: cover;
+        color: transparent;  
+        font-size: 2em;   
+    }
+
+    .a91:hover{
+        color: white;
+        transform: scale(120%);
+        display: grid;
+        place-items: center;
+       
+    }
+
+    .a92{
+        width: 25%;
+        height: 80%;
+        margin: 0 0.5em;
+        background:url(../images/1.jpg);
+        background-position: center;
+        background-size: cover;
+        color: transparent;  
+        font-size: 2em;   
+    }
+
+    .a92:hover{
+        color: white;
+        transform: scale(120%);
+        display: grid;
+        place-items: center;
+       
+    }
+
+    .a93{
+        width: 25%;
+        height: 80%;
+        margin: 0 0.5em;
+        background:url(../images/1.jpg);
+        background-position: center;
+        background-size: cover;
+        color: transparent;  
+        font-size: 2em;   
+    }
+
+    .a93:hover{
+        color: white;
+        transform: scale(120%);
+        display: grid;
+        place-items: center;
+       
+    }
+}
+
+.fondo{
+    background-color: #f09191;
+    grid-area: fondo;
+   width: 100%;
+   height: 20em;
+   margin:0;
+   padding: 0;
+
+    .balls {
+        width: 90%;
+        border: 1px solid;
+        margin:4em 10em;
+        padding-left: 200px;
+        position: relative;
+    }
+
+    .ball1 {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        color: aliceblue;
+        font-size: 40px;
+        display: grid;
+        place-items: center;
+        transition: all 2s;
+        border-radius: 50%;
+      }
+    .ball2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(216, 21, 167);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 0;
+        left: 400px;
+        transition: all 4s 3s;
+        color:transparent;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    
+    .ball3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(46, 165, 42);
+        color: aliceblue;
+        font-size: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 0;
+        left: 400px;
+        transition: all 4s 2s;
+    }
+    
+    .ball4 {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: transparent;
+        color: white;
+        font-size: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 0;
+        left: 900px;
+        transition: all 4s ease-out 6s;
+    }
+
+   
+    
+    .balls:hover .ball1{
+        transform: translateX(200px) rotate(360deg) ;
+        background-color:red;
+    }
+    
+    .balls:hover .ball2{
+        transform: translateX(150px) rotate(90deg) ;
+        color: white;
+    }
+    
+    .balls:hover .ball3{
+        transform: translateX(300px) rotate(360deg) ;
+    }
+     
+    .balls:hover .ball4{
+        color: black ;
+        background-color: blueviolet;
+    }
+}
+
+@media (max-width:700px) {
+    main{
+        border: 2px solid sandybrown;
+        width: 100vw;
+        height: 500vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        font-size: 1em;
+
+        aside{
+            display: none;    
+        }
+
+        .vene{
+            grid-area: head;
+            display:flex;
+            align-items: center;
+        }
+        
+        .azul{
+            background-color: #c6e1e3;
+            grid-area: azul;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .principal{
+            grid-area: a;
+            height: 110vh;
+            font-size: 1em;
+            margin: 0.5em;
+        }
+        
+        .rosa{
+            background-color: #ec4dc5;
+            grid-area: rosa;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .tal{
+            background-color:#221222 ;
+            grid-area: tal;
+            display: grid;
+            place-items: center;
+            height: 150vh;
+            margin-bottom: 10vh;
+            width: 100vw;
+
+            .a90{
+                width: 100%;
+                height: 25vh;
+                margin-top: 0;
+            }
+
+            .a91{
+                width: 100%;
+                height: 25vh;
+            }
+
+            .a92{
+                width: 100%;
+                height: 25vh;
+            }
+
+            .a93{
+                width: 100%;
+                height: 25vh;
+            }
+
+        }
+        
+        .fondo{
+            background-color: #C1C1C1;
+            grid-area: fondo;
+            display:flex;
+            align-items: center;
+            margin-bottom: 10vh;
+        }
+    }
+   
+}
