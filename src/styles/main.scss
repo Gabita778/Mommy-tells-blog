@@ -469,7 +469,7 @@ header input:checked+label span::before {
 
 .container8{
     width: 99%;
-    height: 110vh;
+    height: 150vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr) 25em;
     grid-template-rows: aoto;
@@ -673,8 +673,7 @@ header input:checked+label span::before {
 
         grid-template-columns: auto;
         grid-template-rows: auto;
-        background-color: lightsalmon;
-        height: 310vh;
+        height: 560vh;
         margin-bottom: 50vh;
         width: 99%;
 
@@ -700,6 +699,7 @@ header input:checked+label span::before {
             height: 40vh;
             grid-column: 1/2;
             grid-row: 4/5;
+            margin: auto;
         }
 
         .pink {
@@ -739,21 +739,23 @@ header input:checked+label span::before {
         }
 
         .top {
-            height: 80vh;
+            height: 40vh;
             grid-column: 1/2;
             grid-row: 11/13;
-            width: 80%;
-            height: 30vh;
-            margin: auto;
+            width: 90%;
+           margin: auto;
         }
 
         .bottom {
-            height: 90vh;
+            height: 65vh;
             grid-column: 1/2;
             grid-row: 13/15;
-            width: 80%;
-            height: 50vh;
+            width: 90%;
             margin: auto;
+            text-align: left;
+            font-size: 0.8em;
+            padding: 0;
+            
         }
 
     }
