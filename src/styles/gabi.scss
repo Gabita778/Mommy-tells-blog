@@ -1,6 +1,9 @@
 @use "variables";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&family=Montserrat&family=Playball&family=Playfair:ital,wght@0,400;1,300&family=Poppins&family=Raleway&family=Roboto+Serif:wght@300&display=swap');
 
+body{
+    font-family: variables.$footerfont;
+}
 main {
     width: 90vw;
     height: 190vh;
@@ -34,31 +37,34 @@ main {
 }
 
 .azul{
-    background-color: #c6e1e3;
+    box-shadow: 1px 1px 5px grey;
     grid-area: azul;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 3em;
+    color:grey;
 
-    .star_5 {
+    .star {
         position: relative;
         width: 0px;
         height: 0px;
         display: block;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid orange;
+        border-bottom: 70px solid rgb(250, 222, 234);
         border-left: 100px solid transparent;
         transform: rotate(35deg);
         animation: rotation 6s infinite linear;
       }
       
-      .star_5:before {
+      .star:before {
         content: '';
         position: absolute;
         display: block;
         top: -45px;
         left: -65px;
-        border-bottom: 80px solid orange;
+        border-bottom: 80px solid rgb(248, 211, 227);
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
         height: 0;
@@ -66,7 +72,7 @@ main {
         transform: rotate(-35deg);
       }
       
-      .star_5:after {
+      .star:after {
         content: '';
         position: absolute;
         display: block;
@@ -75,29 +81,29 @@ main {
         width: 0px;
         height: 0px;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid orange;
+        border-bottom: 70px solid rgb(240, 88, 151);
         border-left: 100px solid transparent;
         transform: rotate(-70deg);
       }
       
-      .star_5 {
+      .star {
         position: relative;
         width: 0px;
         height: 0px;
         display: block;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid orange;
+        border-bottom: 70px solid rgb(240, 88, 151);
         border-left: 100px solid transparent;
         transform: rotate(35deg);
       }
       
-      .star_5:before {
+      .star:before {
         content: '';
         position: absolute;
         display: block;
         top: -45px;
         left: -65px;
-        border-bottom: 80px solid orange;
+        border-bottom: 80px solid rgb(240, 88, 151);
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
         height: 0;
@@ -105,7 +111,7 @@ main {
         transform: rotate(-35deg);
       }
 
-      .star_5:after {
+      .star:after {
         content: '';
         position: absolute;
         display: block;
@@ -114,7 +120,7 @@ main {
         width: 0px;
         height: 0px;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid orange;
+        border-bottom: 70px solid pink;
         border-left: 100px solid transparent;
         transform: rotate(-70deg);
       }
@@ -130,8 +136,14 @@ main {
 }
 
 .one{
-    background-color: #2e8d2e;
+    background:url(../images/pikchu/familialatina.jpg) no-repeat;
+    background-size: cover;
+    color: white;
     grid-area: one;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 0.5em;
 }
 
 .principal {
@@ -147,25 +159,38 @@ main {
 }
 
 .rosa{
-    background-color: #ec4dc5;
+    // background-color: #ec4dc5;
     grid-area: rosa;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
+    background: url(../images/pikchu/generacioneslatinas.jpg) no-repeat;
+    background-size: cover;
+    background-position:top;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 0.5em;
+    color: grey;
+    font-size: 1.5em;
 }
 
 aside{
-    background-color: #90EF90;
+    // background-color: #90EF90;
     grid-area: as2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: url(../images/pikchu/abuelaybebe.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+    box-shadow: 1px 1px 5px rgb(68, 65, 65);
+    border-radius: 0.5em;
+    color: white;
+    font-size: 1.1em;
 }
 
 .tal{
-    background-color:#e2b8e2 ;
+    background-color:#ecd3ec ;
     grid-area: tal;
-    // display: grid;
-    // width: 100%;
-    // grid-template-columns: repeat(4 1fr);
-    // grid-template-rows: 100%;
     display: flex;
     align-items: center;
 
@@ -176,7 +201,7 @@ aside{
         width: 25%;
         height: 80%;
         margin: 0 0.5em;
-        background:url(../images/1.jpg);
+        background:url(../images/pikchu/Sopa-de-pollo.jpg);
         background-position: center;
         background-size: cover;
         color: transparent;  
@@ -195,7 +220,7 @@ aside{
         width: 25%;
         height: 80%;
         margin: 0 0.5em;
-        background:url(../images/1.jpg);
+        background:url(../images/pikchu/tomate-de-palo.jpg);
         background-position: center;
         background-size: cover;
         color: transparent;  
@@ -214,7 +239,7 @@ aside{
         width: 25%;
         height: 80%;
         margin: 0 0.5em;
-        background:url(../images/1.jpg);
+        background:url(../images/pikchu/arroz-con-pollo.jpg);
         background-position: center;
         background-size: cover;
         color: transparent;  
@@ -233,7 +258,7 @@ aside{
         width: 25%;
         height: 80%;
         margin: 0 0.5em;
-        background:url(../images/1.jpg);
+        background:url(../images/pikchu/guayaba.jpg);
         background-position: center;
         background-size: cover;
         color: transparent;  
@@ -251,35 +276,45 @@ aside{
 
 .fondo{
     background-color: #f09191;
-    grid-area: fondo;
-   width: 100%;
-   height: 20em;
-   margin:0;
-   padding: 0;
+        grid-area: fondo;
+        width: 100%;
+        height: 20em;
+        margin: 0;
+        padding: 0;
+
+        .i{
+            color:white;
+        }
 
     .balls {
-        width: 90%;
-        border: 1px solid;
+        width: 70%;
+        height: 100%;
+        // border: 1px solid;
         margin:4em 10em;
         padding-left: 200px;
         position: relative;
+        margin: auto;
+        margin-top: 3em;
     }
 
     .ball1 {
         width: 200px;
         height: 200px;
-        background-color: blue;
-        color: aliceblue;
+        background-color:transparent;
         font-size: 40px;
         display: grid;
         place-items: center;
         transition: all 2s;
-        border-radius: 50%;
+        border-radius: 50%; 
+        font-size: 1.5em;
+        color: white;
+        padding-right:1em;
       }
+
     .ball2 {
         width: 200px;
         height: 200px;
-        background-color: rgb(216, 21, 167);
+        background-color: rgb(66, 53, 63);
         border-radius: 50%;
         display: grid;
         place-items: center;
@@ -290,12 +325,13 @@ aside{
         color:transparent;
         font-size: 40px;
         font-weight: 900;
+        transform: rotate(90deg);
     }
     
     .ball3 {
         width: 200px;
         height: 200px;
-        background-color: rgb(46, 165, 42);
+        background-color: transparent;
         color: aliceblue;
         font-size: 40px;
         border-radius: 50%;
@@ -305,15 +341,48 @@ aside{
         top: 0;
         left: 400px;
         transition: all 4s 2s;
+
+        .nose{
+            position: absolute;
+            background: #f0065f;
+            width: 90%;
+            height: 30%;
+            left: 5%;
+            top: 35%;
+            border-radius: 50px;
+            z-index: 4;
+        }
+
+        .stickright{
+            position: absolute;
+            width: 2.5px;
+            height: 2.3vw;
+            background-color: #27354A;
+            top:43%;
+            left:83%;
+            transform: rotate(60deg);
+            z-index: 5;
+        }
+        
+        .stickleft{
+            position: absolute;
+            width: 2.5px;
+            height: 2.3vw;
+            background-color: #27354A;
+            top:30%;
+            left:83%;
+            transform: rotate(120deg);
+            z-index: 5;
+        }
     }
     
     .ball4 {
         width: 200px;
         height: 200px;
-        background-color: white;
+        background-color:transparet;
         border: transparent;
-        color: white;
-        font-size: 40px;
+        color: transparent;
+        font-size: 2em;
         border-radius: 50%;
         display: grid;
         place-items: center;
@@ -323,11 +392,10 @@ aside{
         transition: all 4s ease-out 6s;
     }
 
-   
     
     .balls:hover .ball1{
         transform: translateX(200px) rotate(360deg) ;
-        background-color:red;
+        background-color:pink;
     }
     
     .balls:hover .ball2{
@@ -340,8 +408,8 @@ aside{
     }
      
     .balls:hover .ball4{
-        color: black ;
-        background-color: blueviolet;
+        color: white ;
+        background-color: hsl(0, 81%, 75%);
     }
 }
 
@@ -357,6 +425,10 @@ aside{
 
         aside{
             display: none;    
+        }
+
+        .one{
+            display: none;
         }
 
         .vene{
@@ -376,8 +448,7 @@ aside{
         .principal{
             grid-area: a;
             height: 110vh;
-            font-size: 1em;
-            margin: 0.5em;
+            font-size: 0.5em;
         }
         
         .rosa{
@@ -421,12 +492,9 @@ aside{
         }
         
         .fondo{
-            background-color: #C1C1C1;
-            grid-area: fondo;
-            display:flex;
-            align-items: center;
-            margin-bottom: 10vh;
+          display: none;
         }
     }
    
 }
+
