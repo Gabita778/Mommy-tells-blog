@@ -135,6 +135,21 @@ button {
 
 }
 
+
+.shoppingcart{
+    width: 100%px;
+    height: 25px;
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    font-size: 35px;
+
+    button{
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
 img {
     box-shadow: 1px 1px 5px rgb(110, 110, 110);
 

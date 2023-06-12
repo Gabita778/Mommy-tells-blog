@@ -463,6 +463,7 @@ header input:checked+label span::before {
     padding-bottom: 10px;
     box-shadow: 2px 2px 15px grey;
     color:rgb(172, 164, 164) ;
+    margin: 0.8em 0;
 
 }
 
@@ -472,11 +473,13 @@ header input:checked+label span::before {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 25em;
     grid-template-rows: aoto;
-    background-color: hsl(27, 54%, 89%);
+    background-color: rgb(245, 237, 231);
     gap: 1em;
     padding: 0.8em;
     margin-bottom: 120px;
     padding-top: 60px;
+    border-radius: 1em;
+    box-shadow: 1px 1px 8px grey;
    
 
     .read {
@@ -635,6 +638,15 @@ header input:checked+label span::before {
     grid-row: 2/4;
     border: 2px solid gray;
     border-radius: 5%;
+
+    a{
+        color: #4B4B4B;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #eb1add;
+    }
 
     .asidebottom {
         font-size: 40px;
