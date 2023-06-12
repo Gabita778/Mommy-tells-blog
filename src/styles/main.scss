@@ -661,8 +661,8 @@ header input:checked+label span::before {
         grid-template-columns: auto;
         grid-template-rows: auto;
         background-color: lightsalmon;
-        height: 200vh;
-        margin-bottom: 40vh;
+        height: 310vh;
+        margin-bottom: 50vh;
         width: 99%;
 
         .green {
@@ -672,7 +672,7 @@ header input:checked+label span::before {
         }
 
         .p1 {
-            height: 50vh;
+            height: 75vh;
             grid-column: 1/2;
             grid-row: 2/3;
         }
@@ -684,7 +684,7 @@ header input:checked+label span::before {
         }
 
         .p2 {
-            height: 30vh;
+            height: 40vh;
             grid-column: 1/2;
             grid-row: 4/5;
         }
@@ -707,7 +707,7 @@ header input:checked+label span::before {
         }
 
         .p3 {
-            height: 45vh;
+            height: 73vh;
             grid-column: 1/2;
             grid-row: 8/9;
             
@@ -720,13 +720,13 @@ header input:checked+label span::before {
         }
 
         .p4 {
-            height: 25vh;
+            height: 50vh;
             grid-column: 1/2;
             grid-row: 10/11;
         }
 
         .top {
-            height: 50vh;
+            height: 80vh;
             grid-column: 1/2;
             grid-row: 11/13;
             width: 80%;
@@ -735,7 +735,7 @@ header input:checked+label span::before {
         }
 
         .bottom {
-            height: 60vh;
+            height: 90vh;
             grid-column: 1/2;
             grid-row: 13/15;
             width: 80%;
