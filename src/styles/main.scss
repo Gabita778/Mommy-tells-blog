@@ -602,6 +602,7 @@ header input:checked+label span::before {
     grid-row: 3/4;
     background-image: url("../images/cameroon.jpeg");
     background-size: cover;
+    background-position: center;
     border-radius: 1em;
     box-shadow: 1px 1px 8px grey;
 }
