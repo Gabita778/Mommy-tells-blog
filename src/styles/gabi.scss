@@ -415,9 +415,9 @@ aside{
 
 @media (max-width:700px) {
     main{
-        border: 2px solid sandybrown;
+        // border: 2px solid sandybrown;
         width: 100vw;
-        height: 500vh;
+        height: 380vh;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -435,6 +435,7 @@ aside{
             grid-area: head;
             display:flex;
             align-items: center;
+            margin-left: 1em;
         }
         
         .azul{
@@ -443,12 +444,13 @@ aside{
             display: flex;
             align-items: center;
             justify-content: space-around;
+            margin: auto;
         }
         
         .principal{
             grid-area: a;
             height: 110vh;
-            font-size: 0.5em;
+            font-size: 0.7em;
         }
         
         .rosa{
@@ -457,16 +459,18 @@ aside{
             display: flex;
             align-items: center;
             justify-content: space-around;
+            margin-top: -3em;
         }
         
         .tal{
-            background-color:#221222 ;
+            background-color:#7e7b7e ;
             grid-area: tal;
             display: grid;
             place-items: center;
             height: 150vh;
-            margin-bottom: 10vh;
+            margin-bottom: 1vh;
             width: 100vw;
+            color: #ecd3ec;
 
             .a90{
                 width: 100%;
@@ -493,6 +497,10 @@ aside{
         
         .fondo{
           display: none;
+        }
+
+        footer{
+            background: variables.$header-background;
         }
     }
    
