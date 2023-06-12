@@ -6,99 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form 1</title>
+    
     <link rel="stylesheet" href="./styles/payment.css">
 </head>
 
 <body>
+<header>
+
+    <div>
+        <h1>h mama mia! </h1>
+      </div>
+
+</header>
+   
+      
+    
+      <main>
 
     <fieldset id="fielda">
-        <legend>Personal Data</legend>
+        <legend>SHIPPING</legend>
 
         <form action="https://formspree.io/f/xqkowvzj" method="POST">
+            
+            <div class="address">
+                <label for="street"></label><br>
+                <input type="text" name="street" placeholder="Email Address" required />
+            </div>
+            
             <div>
-                <label for="firstname">First name:</label><br>
-                <input type="text" name="firstname" placeholder="your name" required />
+                <label for="firstname"></label><br>
+                <input type="text" name="firstname" placeholder="First Name" required />
+            </div>
+
+            <div>
+                <label for="lastname"></label><br>
+                <input type="text" name="lastname" placeholder="Last Name" required />
+            </div>
+            <div class="address">
+                <label for="street"></label><br>
+                <input type="text" name="street" placeholder="Address line" required />
             </div>
             <div>
-                <label for="lastname">Last name:</label><br>
-                <input type="text" name="lastname" required />
+                <label for="zipcode"></label><br>
+                <input type="text" name="zipcode" placeholder="Postal/Zip code" required />
             </div>
             <div>
-                <label for="street">Street:</label><br>
-                <input type="text" name="street" required />
+                <label for="city"></label><br>
+                <input type="text" name="city" placeholder="City" required />
             </div>
+
             <div>
-                <label for="zipcode">Zipcode:</label><br>
-                <input type="text" name="zipcode" required />
+                <label for="email"></label><br>
+                <input type="text" name="email" placeholder="State/Province/Region" required />
             </div>
+
             <div>
-                <label for="city">City:</label><br>
-                <input type="text" name="city" required />
+                <label for="phone"></label><br>
+                <input type="text" name="phone" placeholder="Phone Number" required />
             </div>
-            <div>
-                <label for="phone">Phone:</label><br>
-                <input type="text" name="phone" required />
-            </div>
-            <div>
-                <label for="email">Email:</label><br>
-                <input type="text" name="email" required />
-            </div>
-            <div>
-                <label for="justification">Comments:</label><br>
-                <textarea class="textarea" name="justification" cols="20" rows="5" placeholder="Tell us about you..."></textarea>
-            </div>
+            
+            </form>
+
     </fieldset>
 
+
     <fieldset id="fieldb">
-        <legend>Payment </legend>
-        <div>
-            <h3>Method:</h3>
+
+        <legend>PAYMENT</legend>
+
+        
+        <div class="pay">
+            <label for="name"></label><br>
+            <input type="text" name="email" placeholder="Name (as it appears on card)" required />
         </div>
+
         <div>
-            <input type="radio" id="individual" name="web" value="individual">
-            <label for="individual">Credit Card</label>
-            <input type="radio" id="templete" name="web">
-            <label for="templete">PayPal</label>
-        </div>
-        <div>
-            <h3>Save me personal data</h3>
-        </div>
-        <div>
-            <input type="checkbox" name="terms" required />
-            <label for="terms">Yes</label>
-        </div>
-        <div>
-            <input type="checkbox" name="terms" required />
-            <label for="terms">No</label>
-        </div>
-        <div>
-            <label for="email">PayPal Email:</label><br>
-            <input class="pay" type="text" name="email" required />
-        </div>
-        <div>
-            <label for="category">Credit card:</label><br>
+            <label for="category"></label><br>
     
-            <select name="category">
-                <option value="">Please choose a Company</option>
+            <select name="category" >
+                <option value="">Please select a payment method</option>
                 <option value="personal">Visa</option>
                 <option value="company">Mastercard</option>
                 <option value="others">others</option>
     
             </select>
         </div>
-        <div>
-            <label for="data" id="data">Credit Card Number:</label><br>
-            <input class="number" type="number" name="data" required min="16" max="20" />
+
+        <div class="number">
+            <label for="data" id="data"></label><br>
+            <input  type="number" name="data" placeholder="Credit Card Number" required min="16" max="20" />
         </div>
-        <div>
-            <label for="enddata">Expiration Date:</label><br>
-            <input class="widther" type="date" name="enddata" required min="2024-01-01" max="2025-12-31" />
-        </div>
-        <div>
-            <label for="data" id="data">Security code:</label><br>
-            <input class="code" type="number" name="data" required min="3" max="3" />
+        <!-- <div>
+            <input type="radio" id="individual" name="web" e="individual">
+            <label for="individual">Credit Card</label>
+            <input type="radio" id="templete" name="web">
+            <label for="templete">PayPal</label>
+        </div> -->
+    
+       
+        <form>
+
+        <div class="code">
+            <label for="data" id="data"></label><br>
+            <input type="text" name="data" placeholder="MM/YY"  />
         </div>
        
+        <div class="code">
+            <label for="data" id="data"></label><br>
+            <input type="text" name="data" placeholder="CVC" min="3" max="3" />
+        </div>
+
+        </form>
     </fieldset>
     <div>
         <input class="button" type="submit" value="Order our Services" />
