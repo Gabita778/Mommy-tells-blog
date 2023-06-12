@@ -898,10 +898,12 @@ header input:checked+label span::before {
     color: grey;
     padding: 3%;
     margin: auto;
+    line-height: 2em;
+    font-size: 1.5em;
 }
 
 .cry li{
-    padding: 5%;
+    padding: 3%;
 }
 
 .container10 {
@@ -912,6 +914,7 @@ header input:checked+label span::before {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100px 1fr;
     grid-gap: 15px;
+    margin-top: 1em;
 
 
     div {
@@ -928,7 +931,6 @@ header input:checked+label span::before {
         border-radius: none;
         padding: 3em;
         box-shadow: 1px 1px 5px grey;
-        margin: 0 1em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -971,7 +973,7 @@ header input:checked+label span::before {
     background-size: cover;
     opacity: 0.8;
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 800;
     padding: 0.6em;
 
@@ -1009,7 +1011,7 @@ header input:checked+label span::before {
     opacity: 0.8;
     background-size: cover;
     color: variables.$sectionfont;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 800;
     padding: 0.6em;
 
@@ -1047,7 +1049,7 @@ header input:checked+label span::before {
     background-size: cover;
     opacity: 0.8;
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 800;
     padding: 0.6em;
 
@@ -1087,7 +1089,7 @@ header input:checked+label span::before {
     background-size: cover;
     opacity: 0.8;
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     padding: 0.6em;
    
@@ -1128,6 +1130,7 @@ header input:checked+label span::before {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
     grid-gap: 2em;
+    margin-bottom: 1em;
 
     div {
         padding: 3em;
@@ -1145,6 +1148,7 @@ header input:checked+label span::before {
         grid-column: 1/3;
         grid-row: 1/2;
         place-items: center;
+        
         
 
         h1 {
