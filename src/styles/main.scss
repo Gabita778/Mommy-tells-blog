@@ -462,6 +462,7 @@ header input:checked+label span::before {
     padding-top:60px ;
     padding-bottom: 10px;
     box-shadow: 2px 2px 15px grey;
+    color:rgb(172, 164, 164) ;
 
 }
 
@@ -620,6 +621,7 @@ header input:checked+label span::before {
         display: flex;
         justify-content: flex-start;
         padding-top: 10px;
+        font-size: 1.3em;
    
     
     }
@@ -636,8 +638,19 @@ header input:checked+label span::before {
 
     .asidebottom {
         font-size: 40px;
+        padding: 30px;
+        display: flex;
+        justify-content:flex-start;
+        }
+}
 
-    }
+
+.popularposts li {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.3em;
+   
 }
 
 
@@ -649,8 +662,8 @@ header input:checked+label span::before {
         grid-template-columns: auto;
         grid-template-rows: auto;
         background-color: lightsalmon;
-        height: 200vh;
-        margin-bottom: 40vh;
+        height: 310vh;
+        margin-bottom: 50vh;
         width: 99%;
 
         .green {
@@ -660,7 +673,7 @@ header input:checked+label span::before {
         }
 
         .p1 {
-            height: 50vh;
+            height: 75vh;
             grid-column: 1/2;
             grid-row: 2/3;
         }
@@ -672,7 +685,7 @@ header input:checked+label span::before {
         }
 
         .p2 {
-            height: 30vh;
+            height: 40vh;
             grid-column: 1/2;
             grid-row: 4/5;
         }
@@ -695,7 +708,7 @@ header input:checked+label span::before {
         }
 
         .p3 {
-            height: 45vh;
+            height: 73vh;
             grid-column: 1/2;
             grid-row: 8/9;
             
@@ -708,13 +721,13 @@ header input:checked+label span::before {
         }
 
         .p4 {
-            height: 25vh;
+            height: 50vh;
             grid-column: 1/2;
             grid-row: 10/11;
         }
 
         .top {
-            height: 50vh;
+            height: 80vh;
             grid-column: 1/2;
             grid-row: 11/13;
             width: 80%;
@@ -723,7 +736,7 @@ header input:checked+label span::before {
         }
 
         .bottom {
-            height: 60vh;
+            height: 90vh;
             grid-column: 1/2;
             grid-row: 13/15;
             width: 80%;
@@ -734,14 +747,7 @@ header input:checked+label span::before {
     }
 }
 
-.popularposts li {
-    padding-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 20px;
-    font-size: 20px;
-   
-}
+
 
 
 
@@ -758,7 +764,7 @@ header input:checked+label span::before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1fr;
-    gap: 2em;
+    gap: 2.5em;
     margin: auto;
     
 
