@@ -67,6 +67,7 @@ header {
             margin: auto;
             font-family: variables.$headerfont;
             margin-top: 1em;
+            z-index: 5;
 
         }
 
@@ -398,7 +399,7 @@ header input:checked+label span::before {
 // this is section carrusel
 
 .wrapimg {
-    width: 90%;
+    width: 100%;
     height: 20%;
     margin: auto;
     margin-top: 27vh;
@@ -673,8 +674,7 @@ header input:checked+label span::before {
 
         grid-template-columns: auto;
         grid-template-rows: auto;
-        background-color: lightsalmon;
-        height: 310vh;
+        height: 560vh;
         margin-bottom: 50vh;
         width: 99%;
 
@@ -739,21 +739,22 @@ header input:checked+label span::before {
         }
 
         .top {
-            height: 80vh;
             grid-column: 1/2;
             grid-row: 11/13;
             width: 80%;
-            height: 30vh;
+            height: 40vh;
             margin: auto;
         }
 
         .bottom {
-            height: 90vh;
             grid-column: 1/2;
             grid-row: 13/15;
             width: 80%;
-            height: 50vh;
+            height: 65vh;
             margin: auto;
+            padding: 0;
+            font-size: 0.8em;
+            text-align:left;
         }
 
     }
