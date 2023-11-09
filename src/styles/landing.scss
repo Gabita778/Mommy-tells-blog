@@ -3,6 +3,8 @@
 
 
 body {
+    margin: 0;
+    padding: 0;
     background: url(../images/Working-Mother-landing-page.jpg) no-repeat;
     background-size: cover;
     font-family: variables.$body-font;
@@ -35,9 +37,12 @@ header {
 }
 
 div {
+    // border:2px solid;
+    margin: 0;
     grid-area: b;
     width: 50%;
-    padding: 10em;
+    padding-top: 6em;
+    padding-left: 3em;
 
     h1 {
         font-size: 4em;
@@ -61,7 +66,8 @@ div {
     width: fit-content;
     border: transparent;
     padding-left: 15em;
-    padding-bottom: 15em;
+    padding-bottom: 10em;
+    // border: 2px solid;
 
     #cars {
         height: 3.5em;
