@@ -8,14 +8,14 @@ $secondary: hsl(27, 100%, 89%);
 $tertiary: #FDF7F2;
 $hover: hsl(17, 4%, 50%);
 
-$sectionfont: rgb(172, 164, 164);
-$sectiondarkfontcolor: #2b2a2b;
+$section-font: rgb(172, 164, 164);
+$section-dark-font-color: #433e43;
 $header-background: linear-gradient(145deg, hsl(0, 28%, 67%), hsl(27, 54%, 89%));
-$footerbackground: linear-gradient(145deg, #F2E1D3, #c39595);
+$footer-background: linear-gradient(145deg, #F2E1D3, #c39595);
 $promotion-color: #c7b9b9;
 
-$buttoncolor: rgb(223, 74, 183);
-$buttontextcolor: white;
+$button-color: rgb(223, 74, 183);
+$button-text-color: white;
 
 
 
@@ -34,8 +34,8 @@ $grid-breakpoints: (
 
 
 //font
-$fontweight: 800;
-$footerfont: 'Montserrat', sans-serif;
-$headerfont: 'Playball', sans-serif;
+$font-weight: 800;
+$footer-font: 'Montserrat', sans-serif;
+$header-font: 'Playball', sans-serif;
 $body-font:'Playfair, sans-serif';
 
